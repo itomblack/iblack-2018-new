@@ -1,3 +1,115 @@
 //===============================================================================
 // FONTS
 //===============================================================================
+
+
+//set Rem size
+body { 
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: $ink;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.333em;
+  margin: 0;
+  margin-bottom: 1rem;
+
+}
+
+h1, h2, h3, h4 {
+	font-weight: 700;
+}
+
+h4, h5, h6 {
+	font-weight: 400;
+}
+
+// 1.333 rem scale
+
+h1 {
+  font-size: 4.209rem;
+  color: $blue;
+}
+
+h2 {
+  font-size: 3.157rem;
+}
+
+h3 {
+  font-size: 2.369rem;
+}
+
+h4 {
+  font-size: 1.777rem;
+}
+
+h5 {
+  font-size: 1.777rem;
+  line-height: 1.65em;
+}
+
+h6 {
+  font-size: 1.333rem;
+  line-height: 1.65em;
+}
+
+p {
+
+}
+
+
+.bold { font-weight: 700; }
+.upper { text-transform: uppercase; }
+
+
+// ul {
+//   li {
+//     font-size: 1rem;
+//     line-height: 1.5rem;
+//     position: relative;
+//     margin-bottom: 0.5rem;
+//     margin-left: 1rem;
+
+//     &:before {
+//       content: "•";
+//       color: $blue2;
+//       position: absolute;
+//       left: -16px;
+//       top: -1px;
+//     }
+//   }
+// }
+
+
+//******* mobile font size (1.2scale) *******//
+@media screen and (max-width: $medium) {
+  
+  body { font-szie: 14px; }
+
+  h1 {
+    font-size: 2.488rem;
+  }
+
+  h2 {
+    font-size: 2.074rem;
+  }
+
+  h3 {
+    font-size: 1.728rem;
+  }
+
+  h4 {
+    font-size: 1.44rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+

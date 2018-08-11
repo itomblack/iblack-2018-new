@@ -2,13 +2,42 @@
 <html>
 <head>
   @@include('./inc/head.html')
-  
-  <title>Process</title> <!-- ADD A TITLE! -->
+  <title>iBlack - Process</title>
 </head>
 <body>
+	
+	<div id="app" class="page-wrap">
 
-  <h1>Hello Ian.</h1>
-  <img src="img/photo.png" alt="">
+		<!-- menu -->
+		<!-- <img v-if="(logo !== '')" src="img/icons/logo.svg"> -->
+
+		<!-- Intro -->
+		<div id="intro-home">
+        @@include('./inc/components/page-intro.html')
+    </div>
+		
+
+		
+		<!-- Process -->
+		<div id="process">
+        @@include('./inc/components/section-header.html')
+        @@include('./inc/components/process-phase.html')
+    </div>
+
+
+		<!-- Clients -->
+		<div id="clients">
+      @@include('./inc/components/section-header.html')
+       @@include('./inc/components/client-list.html')
+    </div>
+
+
+		<!-- Experiments -->
+
+		<!-- Contact -->
+
+
+	</div><!-- close page-wrap -->
 
   <script src="js/vendor/jquery-2.1.1.min.js"></script>
   <script src="js/main.js"></script>

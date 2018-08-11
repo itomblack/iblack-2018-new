@@ -17,12 +17,195 @@ ul {
 
 
 html, body {
-  background-color: $ink;
-  color: white;
+  background-color: white;
 }
+
+div { position: relative; }
 
 
 //===============================================================================
 // HOME STLYES
 //===============================================================================
+
+// INTRO SECTION
+.page-wrap {
+	width: 100vw;
+	min-height: 100vh;
+	border: 20px solid $blue;
+  border-image: linear-gradient(to bottom, $blue 0%, $green 100%);
+	border-image-slice: 1;
+	padding: 0 8%;
+	padding-bottom: $xxvlrg-pad;
+}
+
+.intro-wrap {
+	text-align: center;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-bottom: 50vh;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-text {
+	z-index: 10;
+}
+
+.intro-backimg {
+  position: fixed;
+  width: 500px;
+  max-width: 66%;
+  z-index: 1;
+  opacity: 0;
+
+  img {
+  	width: 100%;
+  }
+}
+
+
+// PROCESS
+
+.central-col {
+	padding: 0 8% 0 8%;
+}
+
+
+.section-head-wrap {
+	border-top: 1px solid $green;
+	padding-top: $xxvlrg-pad;
+	margin-bottom: $xvlrg-pad;
+
+	.head-text {
+		max-width: $medium;
+	}
+}
+
+.process-link {
+	margin-bottom: $xvlrg-pad;
+	position: relative;
+	padding-right: 96px;
+
+	&:last-of-type { margin-bottom: $xxvlrg-pad;}
+
+	&:hover {
+		.arrow-roundel-green {
+			background-color: $blue;
+			
+
+			&::after {
+				left: 100px;
+			}
+
+			&::before {
+				left: 13px;
+			}
+
+		}
+		.link-underline:after {
+		  width: 100%;
+		}
+	}
+}
+
+.link-underline {
+	display: inline-block;
+	position: relative;
+
+	&::after {
+	  content: '';
+	  position: absolute;
+	  width: 0;
+	  height: 3px;
+	  display: block;
+	  margin-top: -3px;
+	  background: $green;
+	  transition: width $short ease;
+	}
+}
+
+	
+
+.inset-line {
+	margin-left: 42px;
+	position: relative;
+
+	&::before {
+		content: "";
+		width: 21px;
+		height: 4px;
+		border-radius: 2px;
+		position: absolute;
+		background-color: $blue;
+		left: -42px;
+		top: 17px;
+
+	}
+}
+
+.arrow-roundel-green {
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	background-color: $green;
+	position: absolute;
+	top: 29px;
+  right: 0;
+  transition: all $short ease;
+  overflow: hidden;
+
+	&::after {
+		content: url('/img/icons/arrow-white.svg');
+		position: absolute;
+		left: 13px;
+		top: 14px;
+		transition: all $short ease;
+	}
+
+	&::before {
+		content: url('/img/icons/arrow-white.svg');
+		position: absolute;
+		left: -87px;
+		top: 14px;
+		transition: all $short ease;
+	}
+}
+
+
+
+.client-name {
+	display: inline-block;	
+
+	h6 { display: inline;	}
+	
+	&::after {
+		content: "/";
+		margin: 16px;
+		font-weight: 700;
+		color: $green;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -3,22 +3,42 @@
 // VARIABLES
 //===============================================================================
 
+//colours
 $ink: #000030;
+$white: #ffffff;
+
+$green: #50EDD8;
+// $greentext: #50E7D3;  
+$blue: #4E74E3;
+
+.text-ink { color: $ink; }
+.text-white { color: $white; }
+.text-blue { color: $blue; }
 
 
-$grey: #CACCD9;
-$lgrey: #E2E2E2;
-$vlgrey: #F2F2F2;
+//padding
+$sml-pad: 8px;
+$reg-pad: 16px;
+$med-pad: 24px;
+$lrg-pad: 32px;
+$vlrg-pad: 64px;
+$xvlrg-pad: 96px;
+$xxvlrg-pad: 128px;
 
 
-
-
+//animation
 $short: 0.3s;
 $mid: 0.6s;
 $long: 0.9s;
 $vLong: 1.5s;
 
 
+//screen sizes
+$large: 1000px;
+$medium: 650px;
+$small: 500px;
 
+
+.marg-bot-0 { margin-bottom: 0; }
 
 
