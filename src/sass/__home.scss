@@ -22,6 +22,10 @@ html, body {
 
 div { position: relative; }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
 
 //===============================================================================
 // HOME STLYES
@@ -31,11 +35,9 @@ div { position: relative; }
 .page-wrap {
 	width: 100vw;
 	min-height: 100vh;
-	border: 20px solid $blue;
   border-image: linear-gradient(to bottom, $blue 0%, $green 100%);
 	border-image-slice: 1;
-	padding: 0 8%;
-	padding-bottom: $xxvlrg-pad;
+	padding-bottom: $xvlrg-pad;
 }
 
 .intro-wrap {
@@ -58,7 +60,7 @@ div { position: relative; }
   width: 500px;
   max-width: 66%;
   z-index: 1;
-  opacity: 0;
+  opacity: .3;
 
   img {
   	width: 100%;
@@ -68,47 +70,128 @@ div { position: relative; }
 
 // PROCESS
 
-.central-col {
-	padding: 0 8% 0 8%;
-}
-
-
 .section-head-wrap {
 	border-top: 1px solid $green;
 	padding-top: $xxvlrg-pad;
 	margin-bottom: $xvlrg-pad;
+	display: inline-block;
+  width: 100%;
 
-	.head-text {
-		max-width: $medium;
+	.head-text { max-width: $medium; }
+
+	@media screen and (max-width: $medium) { margin-bottom: $vlrg-pad; }
+}
+
+
+
+.plus-roundel-green, .arrow-roundel-green {
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	background-color: $green;
+	position: absolute;
+	top: 29px;
+  right: 0;
+  transition: all $short ease;
+  overflow: hidden;
+
+	@media screen and (max-width: $medium) {
+    transform: scale(0.75);
+    top: 16px;
+  }
+
+  @media screen and (max-width: $small) {
+    transform: scale(0.5);
+  }
+
+ }
+
+
+.plus-roundel-green {
+  &::after, &::before {
+  	content: "";
+  	width: 20px;
+  	height: 4px;
+  	background-color: $white;
+  	position: absolute;
+  	transition: all $short ease;
+  	left: 22px;
+  }
+  &::after {
+  	top: 22px;
+  	transform: rotate( -315deg );
+  }
+	&::before {
+		top: 34px;
+		transform: rotate( -405deg );
+	}
+
+}
+
+
+.arrow-roundel-green {
+  &::after, &::before {
+		content: url('/img/icons/arrow-white.svg');
+		position: absolute;
+		transition: all $short ease;
+  }
+	&::after {
+		left: 13px;
+		top: 14px;
+	}
+	&::before {
+		left: -87px;
+		top: 14px;
 	}
 }
+
 
 .process-link {
 	margin-bottom: $xvlrg-pad;
 	position: relative;
 	padding-right: 96px;
+	cursor: pointer;
 
 	&:last-of-type { margin-bottom: $xxvlrg-pad;}
 
-	&:hover {
-		.arrow-roundel-green {
-			background-color: $blue;
-			
-
-			&::after {
-				left: 100px;
-			}
-
-			&::before {
-				left: 13px;
-			}
-
-		}
-		.link-underline:after {
-		  width: 100%;
-		}
+	@media screen and (max-width: $medium) {
+		margin-bottom: $vlrg-pad;
+		padding-right: $vlrg-pad;
 	}
 }
+
+
+.title-link {
+	position: relative;
+	display: inline-block;	
+}
+
+
+.title-link, .process-link{
+	&:hover {
+
+		.arrow-roundel-green {
+			background-color: $blue;
+			&::after { left: 100px; }
+			&::before { left: 13px; }
+		}
+
+		.plus-roundel-green {
+			background-color: $blue;
+			&::after, &::before {
+				width: 24px;
+				left: 18px;
+				top: 28px;
+			}
+			&::after { transform: rotate( 0deg ); }
+			&::before { transform: rotate( 90deg ); }
+		}
+
+		.link-underline:after { width: 100%; }
+	}
+}
+
+
 
 .link-underline {
 	display: inline-block;
@@ -126,52 +209,6 @@ div { position: relative; }
 	}
 }
 
-	
-
-.inset-line {
-	margin-left: 42px;
-	position: relative;
-
-	&::before {
-		content: "";
-		width: 21px;
-		height: 4px;
-		border-radius: 2px;
-		position: absolute;
-		background-color: $blue;
-		left: -42px;
-		top: 17px;
-
-	}
-}
-
-.arrow-roundel-green {
-	width: 60px;
-	height: 60px;
-	border-radius: 100%;
-	background-color: $green;
-	position: absolute;
-	top: 29px;
-  right: 0;
-  transition: all $short ease;
-  overflow: hidden;
-
-	&::after {
-		content: url('/img/icons/arrow-white.svg');
-		position: absolute;
-		left: 13px;
-		top: 14px;
-		transition: all $short ease;
-	}
-
-	&::before {
-		content: url('/img/icons/arrow-white.svg');
-		position: absolute;
-		left: -87px;
-		top: 14px;
-		transition: all $short ease;
-	}
-}
 
 
 
@@ -186,8 +223,12 @@ div { position: relative; }
 		font-weight: 700;
 		color: $green;
 	}
-}
 
+	&:last-of-type::after {
+		content: "";
+		margin: 0;
+	}
+}
 
 
 

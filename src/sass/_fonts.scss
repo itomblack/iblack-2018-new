@@ -2,6 +2,8 @@
 // FONTS
 //===============================================================================
 
+.bold { font-weight: 700; }
+.upper { text-transform: uppercase; }
 
 //set Rem size
 body { 
@@ -10,11 +12,11 @@ body {
   color: $ink;
 }
 
+$lrg-scale: 1.333;
+
 h1, h2, h3, h4, h5, h6, p {
   line-height: 1.333em;
   margin: 0;
-  margin-bottom: 1rem;
-
 }
 
 h1, h2, h3, h4 {
@@ -25,42 +27,92 @@ h4, h5, h6 {
 	font-weight: 400;
 }
 
+h5,h6,p {  line-height: 1.65em; }
+
 // 1.333 rem scale
 
 h1 {
-  font-size: 4.209rem;
+  font-size: ( $lrg-scale*$lrg-scale*$lrg-scale*$lrg-scale*$lrg-scale )+rem;
   color: $blue;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 3.157rem;
+  font-size: ( $lrg-scale*$lrg-scale*$lrg-scale*$lrg-scale )+rem;
 }
 
 h3 {
-  font-size: 2.369rem;
+  font-size: ( $lrg-scale*$lrg-scale*$lrg-scale )+rem;
 }
 
 h4 {
-  font-size: 1.777rem;
+  font-size: ( $lrg-scale*$lrg-scale )+rem;
 }
 
 h5 {
-  font-size: 1.777rem;
-  line-height: 1.65em;
+  font-size: ( $lrg-scale*$lrg-scale )+rem;
 }
 
 h6 {
-  font-size: 1.333rem;
-  line-height: 1.65em;
+  font-size: ( $lrg-scale )+rem;
 }
 
-p {
+p { }
 
+
+//******* tablet font size (1.2scale) *******//
+@media screen and (max-width: $medium) {
+
+  $med-scale: 1.2;
+  
+  body { font-szie: 14px; }
+  h1 {
+    font-size: ( $med-scale*$med-scale*$med-scale*$med-scale*$med-scale )+rem;
+  }
+  h2 {
+    font-size: ( $med-scale*$med-scale*$med-scale*$med-scale )+rem;
+  }
+  h3 {
+    font-size: ( $med-scale*$med-scale*$med-scale )+rem;
+  }
+  h4 {
+    font-size: ( $med-scale*$med-scale )+rem;
+  }
+  h5 {
+    font-size: ( $med-scale*$med-scale )+rem;
+  }
+  h6 {
+    font-size: ( $med-scale )+rem;
+  }
 }
 
+//******* tablet font size (1.2scale) *******//
+@media screen and (max-width: $small) {
 
-.bold { font-weight: 700; }
-.upper { text-transform: uppercase; }
+  $sml-scale: 1.15;
+  
+  body { font-szie: 14px; }
+  h1 {
+    font-size: ( $sml-scale*$sml-scale*$sml-scale*$sml-scale*$sml-scale )+rem;
+  }
+  h2 {
+    font-size: ( $sml-scale*$sml-scale*$sml-scale*$sml-scale )+rem;
+  }
+  h3 {
+    font-size: ( $sml-scale*$sml-scale*$sml-scale )+rem;
+  }
+  h4 {
+    font-size: ( $sml-scale*$sml-scale )+rem;
+  }
+  h5 {
+    font-size: ( $sml-scale*$sml-scale )+rem;
+  }
+  h6 {
+    font-size: ( $sml-scale )+rem;
+  }
+}
+
+ ul { margin-top: 0; }
 
 
 // ul {
@@ -80,35 +132,6 @@ p {
 //     }
 //   }
 // }
-
-
-//******* mobile font size (1.2scale) *******//
-@media screen and (max-width: $medium) {
-  
-  body { font-szie: 14px; }
-
-  h1 {
-    font-size: 2.488rem;
-  }
-
-  h2 {
-    font-size: 2.074rem;
-  }
-
-  h3 {
-    font-size: 1.728rem;
-  }
-
-  h4 {
-    font-size: 1.44rem;
-  }
-
-  h5 {
-    font-size: 1.2rem;
-  }
-}
-
-
 
 
 

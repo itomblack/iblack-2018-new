@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @@include('./inc/head.html')
+  <title>iBlack - CV</title>
+</head>
+<body>
+	
+	<div id="app" class="page-wrap">
+
+		<!-- menu -->
+		<!-- <img v-if="(logo !== '')" src="img/icons/logo.svg"> -->
+
+		<!-- Intro -->
+		<div id="intro-cv">
+        @@include('./inc/components/lhs-intro.html')
+    </div>
+
+    <!-- Education -->
+    <div id="education">
+    	
+			<!-- Education -->
+			<div class="section-head-wrap">
+				<h2 class="marg-bot-16">Education</h2>
+
+				  <!-- Uni -->
+				  <div class="col-1-2 no-l-pad marg-bot-16">
+				    <p class="bold text-blue upper"> Sheffield School Of Architecture </p>
+				    <p> Architecture BA(Hons) : Upper 2nd Class </p>
+				  </div>
+				  <!-- School -->
+				  <div class="col-1-2 no-pad-mob">
+				    <p class="bold text-blue upper">  Eltham College </p>
+				    <ul>
+				      <li >3 A grade A-levels</li>
+				      <li >1 A grade AS-level</li>
+				      <li >10 A* to A grade GCSEs</li>
+				    </ul>
+				  </div>
+
+			</div>
+
+
+
+
+    </div>
+
+    <!-- Education -->
+    <div id="employment"></div>
+
+
+    <!-- Contact -->
+    <div id="contact">
+			@@include('./inc/components/section-header.html')
+		</div>
+		
+
+		
+
+
+	</div><!-- close page-wrap -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>

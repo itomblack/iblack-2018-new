@@ -1,6 +1,25 @@
-<div class="section-head-wrap">
-	<div class="head-text">
-		<h2> {{ title }} </h2>
-		<h6> {{ subtitle }} </h6>
+<!-- If NO LINK -->
+<template v-if="(url == '')">
+	<div class="section-head-wrap">
+		<div class="head-text">
+			<h2> {{ title }} </h2>
+			<h6> {{ subtitle }} </h6>
+		</div>
 	</div>
-</div>
+</template>
+
+<!-- If NO LINK -->
+<template v-else>
+	<div class="section-head-wrap">
+		<a href="" class="title-link width-50">
+			<div class="head-text">
+				<h2 class="link-underline"> {{ title }} </h2>
+				<h6> {{ subtitle }} </h6>
+			</div>
+
+			<div class="arrow-roundel-green"></div>
+		</a>
+	</div>
+</template>
+
+

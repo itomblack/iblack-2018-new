@@ -1,0 +1,19 @@
+//===============================================================================
+// CV STLYES
+//===============================================================================
+
+.intro-wrap-lhs {
+	text-align: left;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  margin: 25vh 0;
+  max-width: 750px;
+
+  h1 { margin-bottom: 0; }
+  h2 { margin-bottom: 1rem; }
+}
+
+.intro-text {
+	z-index: 10;
+}
