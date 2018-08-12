@@ -1,3 +1,106 @@
+
+//===============================================================================
+// MENU
+//===============================================================================
+
+.menu-wrap {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 64px;
+	z-index: 20;
+	height: 64px;
+	transition: all $short ease;
+	
+	.border-adjust-wrap {
+	height: inherit;
+
+		img, ul, li { transition: all $short ease; }
+
+		img {
+			float: left;
+			height: 100%;
+		}
+
+		ul {
+			float: right;
+			margin: 21px 0 0 0;
+		}
+
+		li {
+			margin-left: 36px;
+		}
+	}
+
+	.js-minimenu & {
+		top: 21px;
+		height: 36px;
+
+		ul { margin: 7px 0 0 0; }
+	}
+
+	@media screen and (max-width: $small) { 
+		.border-adjust-wrap {
+			img { display: none; }
+
+			ul {
+				display: block;
+		    margin: 0 auto;
+		    text-align: center;
+		    float: none;
+			}
+			li {
+				text-align: center;
+				margin: 0 10px;
+			}
+		}
+	}
+}
+
+.set-menu-about {
+	.menu-about {
+		&::before {
+			width: 100%;
+			background: $blue;
+		}
+	}
+}
+
+.set-menu-process {
+	.menu-process {
+		&::before {
+			width: 100%;
+			background: $blue;
+		}
+	}
+}
+
+.set-menu-cv {
+	.menu-cv {
+		&::before {
+			width: 100%;
+			background: $blue;
+		}
+	}
+}
+
+.set-menu-contact {
+	.menu-contact {
+		&::before {
+			width: 100%;
+			background: $blue;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
 //===============================================================================
 // CONTACT
 //===============================================================================

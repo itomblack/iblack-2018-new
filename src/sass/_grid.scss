@@ -14,21 +14,25 @@ $gutter: 20px;
   border: 20px solid $blue;
 }
 
+.menu-wrap { padding: 0 10%; }
+.border-adjust-wrap { padding: 0 20px }
+
 @media screen and ( max-width: $large ) {
   .width-50 {  width: 75%; }
-  .central-col, .page-wrap { padding: 0 5%; }
+  .central-col, .page-wrap, .menu-wrap { padding: 0 5%; }
 }
 
 @media screen and ( max-width: $medium ) {
   .width-50 {  width: 100%; }
   .central-col { padding: 0; }
   .page-wrap { border-width: 10px }
+  .border-adjust-wrap { padding: 0 10px }
   .no-tablet { display: none; }
 }
 
-@media screen and ( max-width: $small ) {
+// @media screen and ( max-width: $small ) {
 
-}
+// }
 
 
 

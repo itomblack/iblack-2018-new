@@ -1,5 +1,57 @@
 (function () { 'use strict';
 
+
+
+// ******************* menu ***************** //
+// ********** ************* *************** //
+
+var menu = new Vue({
+	el: "#menu",
+	data: {
+		links: [
+			{
+				text: 'Process',
+				url: 'index.html',
+				class: 'menu-process'
+			},
+			{
+				text: 'About',
+				url: 'about.html',
+				class: 'menu-about'
+			},
+			{
+				text: 'CV',
+				url: 'cv.html',
+				class: 'menu-cv'
+			},
+			{
+				text: 'Contact',
+				url: 'contact.html',
+				class: 'menu-contact'
+			}
+		]
+	}
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // ******************* HOME *************** //
 // ********** ************* *************** //
 
@@ -155,7 +207,7 @@
 		data: {
 			title: 'Curriculum Vitae.',
 			subtitle: 'Ian Black',
-			blurb: 'I partner with technology focussed companies to identify innovation opportunities and design interactions across their digital and physical brand touchpoints. I achieve this through an adaptable process that delivers meaningful value for both the business and their customers.'
+			blurb: 'You’re probably busy, so I’ll keep this short & sweet. I partner with technology focussed companies to design new & improved experiences for their customers & teams. I achieve this through strategy, design, content and prototyping. If you want to know more, just ask. That’s it really.'
 		}
 	});
 
@@ -285,7 +337,7 @@
 		el: "#intro-contact",
 		data: {
 			title: 'Get in touch',
-			subtitle: 'I’m always open to a chat over tea, or the web',
+			subtitle: 'I’m always open to a chat, over tea or the web',
 			backImg: 'photos/contact.png'
 		}
 	});
@@ -346,7 +398,7 @@
 var about_intro = new Vue({
 	el: "#intro-about",
 	data: {
-		title: 'About me',
+		title: 'About',
 		subtitle: '',
 		backImg: 'photos/me-1.png'
 	}
@@ -410,8 +462,7 @@ var about_articles = new Vue({
 				{
 					phaseTitle: 'Always bring the hot chocolate',
 					url: 'https://medium.com/@itomblack88/always-bring-the-hot-chocolate-7a175df69f82'
-				},
-				
+				}
 			]
 		}
 	});
@@ -421,8 +472,41 @@ var about_articles = new Vue({
 
 
 
+// ******************* PROCESS STAGES ***************** //
+// ********** ************************ *************** //
 
-
+var about_articles = new Vue({
+		el: "#modal-panel",
+		data: {
+			phases: [
+				{
+					id: 'proj-design',
+					title: 'Design',
+					subtitle: 'AbCellera',
+					summary: 'An Innovative Approach to Antibody Exploration',
+					para: 'This Vancouver based Biotech startup had developed the world’s leading technology for screening and mapping of natural immune responses. They needed help transforming their software from a functional – yet frustrating – experience into a scalable product they could be proud of as a brand.</br></br>I identified core problems through a week of in-depth user research, defined a 3-phase strategy, and delivered a holistic core product redesign, designed to tackle each frustration seen during the initial product testing. We celebrated completion of phase one with team donuts. Delicious!',
+					images: [
+						{ oneImage: 'work/abc-1.jpg' },
+						{ oneImage: 'work/abc-2.jpg' },
+						{ oneImage: 'work/abc-3.jpg' },
+						{ oneImage: 'work/abc-4.jpg' }
+					]
+				},
+				{
+					id: 'proj-reseach',
+					title: 'Research',
+					subtitle: 'Lalala',
+					summary: 'lololo',
+					para: 'Hoo ha hee',
+					images: [
+						{ oneImage: 'work/abc-2.jpg' },
+						{ oneImage: 'work/abc-2.jpg' },
+					]
+				},
+						
+			]
+		}
+	});
 
 
 
@@ -438,46 +522,125 @@ var about_articles = new Vue({
 // *************** *************** *************** //
 
 
+
+
+// Click project
+if ( document.getElementById('modal') ) {
+		var processElements = document.querySelectorAll(".process-link");
+		var modal = document.getElementById('modal');
+		var closeBtn = document.getElementById('close-modal');
+		var closePanel = document.getElementById('close-panel');
+
+
+		for (var i = 0; i < processElements.length; i++) {
+		  processElements[i].addEventListener("click", function() {
+		    
+		  	//get ID
+		    var processId = this.id;
+		    console.log(processId)
+		    var showProjectId = processId.replace("open", "proj");
+		    console.log(showProjectId);
+
+		    //open modal
+		    modal.classList.add("js-open-modal") ;
+
+		    //show section
+
+
+
+		  }); //end click-function
+		} //end for loop
+
+
+		// close button or close on cover-click
+		closeBtn.addEventListener("click", function() {
+			modal.classList.remove("js-open-modal") ;
+		});
+
+		closePanel.addEventListener("click", function() {
+			modal.classList.remove("js-open-modal") ;
+		});
+
+	} //end if modal exists
+
+
+
+
+
+
+
+
+
+
+
+
 		// ********** FADE OUT HERO IMAGE ********** //
-		if ( document.getElementById('fade-img') ) {
+		window.addEventListener('scroll', function() {
+
+
+			// ********** TITLE IMAGES ********* //
+			if ( document.getElementById('fade-img') ) {
 
 				var fadeOutItem = document.getElementById('fade-img');
 				var photoZIndex = fadeOutItem.style.zIndex;
+				var scrolled = window.pageYOffset;
 
-				window.addEventListener('scroll', function() {
-						var scrolled = window.pageYOffset;
+				//for first bit of scroll do all the things
+				var opacityLevel = 0.3 - (scrolled / 1000);
+				fadeOutItem.style.opacity = opacityLevel;
 
-						//for first bit of scroll do all the things
-						// if (scrolled <= 1200) {
-								var opacityLevel = 0.3 - (scrolled / 1000);
-								fadeOutItem.style.opacity = opacityLevel;
+				//once hidden move to back
+				if ( opacityLevel <= 0 )  {
+					fadeOutItem.style.display = 'none';
+				} 
 
-								//once hidden move to back
-								if ( opacityLevel <= 0 )  {
-									fadeOutItem.style.display = 'none';
-								} 
+				// //reshow moving up
+				if ( opacityLevel >= 0 ) {
+					fadeOutItem.style.display = 'block';
+				} 
+			}
 
-								// //reshow moving up
-								if ( opacityLevel >= 0 ) {
-									fadeOutItem.style.display = 'block';
-								} 
-						// }
-				});
-		}
-		// ********** END ********** //
 
-if ( document.getElementById('fade-2') ) {
-	window.addEventListener('scroll', function() {
 
-		var fadeImg = document.getElementById('fade-2');
-	  var distanceToTop = fadeImg.getBoundingClientRect().top;
+			// ************ ABOUT SECTION IMAGE ********** //
+			if ( document.getElementById('fade-2') ) {
 
-	  var opacityLevel = 0 + ( distanceToTop / 1000 );
-	  fadeImg.style.opacity = opacityLevel;
-	  fadeImg.style.transform = "translateY( " + ( distanceToTop / 3 ) + "px )";
+				var fadeImg = document.getElementById('fade-2');
+			  var distanceToTop = fadeImg.getBoundingClientRect().top;
 
-	 });
-};
+			  var opacityLevel = 0 + ( distanceToTop / 1000 );
+			  fadeImg.style.opacity = opacityLevel;
+			  fadeImg.style.transform = "translateY( " + ( distanceToTop / 3 ) + "px )";
+
+			};
+
+
+			// ***************** MENU ************** //
+			if ( document.getElementById('menu') ) {
+				var menu = document.getElementById('menu'); 
+				
+				if ( window.pageYOffset >= 66 ) {
+						menu.classList.add("js-minimenu") ;
+				} else {
+						menu.classList.remove("js-minimenu") ;
+				}
+			};
+
+
+
+
+
+
+
+
+		});
+		// ********** END SCROLL STUFF ********** //
+
+
+window.addEventListener('scroll', function() {
+
+	
+});
 
 
 

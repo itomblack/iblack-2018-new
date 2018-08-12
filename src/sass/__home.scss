@@ -84,7 +84,7 @@ a {
 
 
 
-.plus-roundel-green, .arrow-roundel-green {
+.plus-roundel-green, .arrow-roundel-green, .close-roundel {
 	width: 60px;
 	height: 60px;
 	border-radius: 100%;
@@ -97,12 +97,12 @@ a {
 
 	@media screen and (max-width: $medium) {
     transform: scale(0.75);
-    top: calc(50% - 22px);
+    // top: calc(50% - 30px);
   }
 
   @media screen and (max-width: $small) {
     transform: scale(0.5);
-    top: calc(50% - 15px);
+    // top: calc(50% - 15px);
   }
 
  }
@@ -143,6 +143,38 @@ a {
 	&::before {
 		left: -87px;
 		top: 14px;
+	}
+}
+
+.close-roundel { 
+  &::after, &::before {
+  	content: "";
+  	width: 24px;
+		left: 18px;
+		top: 28px;
+  	height: 4px;
+  	background-color: $white;
+  	position: absolute;
+  	transition: all $short ease;
+  }
+
+  &::after { transform: rotate( 45deg ); }
+	&::before {	transform: rotate( -45deg ); }
+
+	&:hover {
+		background-color: $blue;
+		&::after, &::before {
+			width: 20px;
+			left: 19px;
+		}
+		&::after {
+			top: 34px;
+			transform: rotate( -315deg );
+		}
+		&::before {
+			transform: rotate( -405deg );
+			top: 22px;
+		}
 	}
 }
 
@@ -198,20 +230,20 @@ a {
 	display: inline-block;
 	position: relative;
 
-	&::before {
-	  content: '';
-	  position: absolute;
-	  width: 0;
-	  bottom: 0px;
-	  height: 3px;
-	  display: block;
-	  margin-top: -3px;
-	  background: $green;
-	  transition: width $short ease;
-	}
+		&::before {
+		  content: '';
+		  position: absolute;
+		  width: 0;
+		  bottom: 0px;
+		  height: 3px;
+		  display: block;
+		  margin-top: -3px;
+		  background: $green;
+		  transition: width $short ease;
+		}
 
-	&:hover {
-		&::before { width: 100%; }
+	@media screen and (min-width: $medium) { 
+		&:hover::before { width: 100%; }
 	}
 }
 
@@ -241,9 +273,80 @@ a {
 
 
 
+//===============================================================================
+// MODAL
+//===============================================================================
+
+.modal-wrap, .content-cover, .modal-content {
+	height: 100vh;
+}
 
 
+.content-cover, .modal-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
 
+.modal-wrap {
+	width: 100%;
+	z-index: 30;
+	top: 0;
+	right: -120%;
+	position: fixed;
+	transition: all $short ease;
+
+	&.js-open-modal {
+		right: 0;
+	}
+}
+
+.content-cover {
+	width: 100%;
+	background-color: rgba( 255,255,255,.5 );
+	overflow: hidden;
+}
+
+.modal-content {
+	width: 50%;
+	background-color: $ink;
+	box-shadow: 0 2px 27px 0 rgba(0,0,0,0.35);
+
+	.close-roundel {
+		position: absolute;
+		left: -30px;
+		top: 66px;
+		z-index: 50;
+	}
+}
+
+.project-wrap {
+	height: 100vh;
+	overflow: auto;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+
+	img {
+		width: 100%;
+		margin: 12px 0;
+	}
+	
+}
+
+.wrap-padding {
+	padding: 64px 10%;
+	max-width: 700px;
+
+	.add-marg { margin-top: 48px; }
+}
+
+.chat-link {
+	padding: 64px 0;
+	display: inline-block;
+
+	.arrow-roundel-green { right: 10%; }
+}
 
 
 
