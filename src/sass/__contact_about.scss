@@ -57,6 +57,60 @@
 
 	@media screen and (max-width: $small) { 
 		p { width: 90%; }
-		img { display: none; }
+		img { top: -50px; }
 	}
 }
+
+
+.testimonial {
+	margin-bottom: 64px;
+	margin-left: 48px;
+
+	&::before {
+		content: url('/img/icons/quote.svg');
+		position: absolute;
+		left: -48px;
+		top: -1px;
+	}
+
+	&:last-of-type { margin-bottom: $xxvlrg-pad; }
+
+	@media screen and (max-width: $medium) { 
+		margin-left: 32px;
+		&::before {
+			left: -39px;
+			top: -5px;
+			transform: scale(0.8);
+		}
+	}
+
+	@media screen and (max-width: $small) { 
+		margin-left: 0px;
+		&::before {
+			transform: scale( 0.75 );
+			left: -8px;
+    	top: -33px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

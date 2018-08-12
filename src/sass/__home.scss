@@ -90,18 +90,19 @@ a {
 	border-radius: 100%;
 	background-color: $green;
 	position: absolute;
-	top: 29px;
+	top: calc(50% - 30px);
   right: 0;
   transition: all $short ease;
   overflow: hidden;
 
 	@media screen and (max-width: $medium) {
     transform: scale(0.75);
-    top: 16px;
+    top: calc(50% - 22px);
   }
 
   @media screen and (max-width: $small) {
     transform: scale(0.5);
+    top: calc(50% - 15px);
   }
 
  }

@@ -275,7 +275,7 @@
 
 
 
-// ******************* CV ***************** //
+// ******************* Contact ***************** //
 // ********** ************* *************** //
 
 
@@ -317,10 +317,11 @@
 				},
 				{ name: 'Medium',
 					url: 'https://medium.com/@itomblack88'
-				},
+				}
 			]
 		}
 	});
+
 
 
 
@@ -361,6 +362,61 @@ var about_journey = new Vue({
 		img: 'photos/me-2.png'
 	}
 });
+
+
+var about_quotes = new Vue({
+		el: "#about-quotes",
+		data: {
+			title: 'Testimonials',
+			subtitle: 'A few words from my clients & colleagues',
+			url: '',
+			quotes: [
+				{ name: 'Murray McCutcheon',
+					company: 'Business Development  •  AbCellera',
+					quote: 'Ian did a great job delivering value, and the team is very positive about his work. I speak for many in saying we hope we have the opportunity to work together with him again.'
+				},
+				{ name: 'David Sutton',
+					company: 'Product Design Director  •  Beyond',
+					quote: 'Ian & I worked closely together on a daily basis throughout his time at Beyond, and was always professional and accountable for his work. He always met and exceeded his obligations to his team.'
+				},
+				{ name: 'Justin Pybus',
+					company: 'UI Designer •  TravelSupermarket',
+					quote: 'Ian really is a master of all his trades. He has an exceptional depth and breadth of knowledge that spans from code to UI Design, from ideation sessions & workshops, to delivering in depth bodies of research. He designs practical solutions that have a measurable impact on the business - Invest in Ian - he\'s a winner!'
+				}
+			]
+		}
+	});
+
+
+var about_articles = new Vue({
+		el: "#about-writing",
+		data: {
+			title: 'Selected Writing',
+			subtitle: 'Because content matters',
+			url: '',
+			phases: [
+				{
+					phaseTitle: '7 big trends in branded content strategy',
+					url: 'https://medium.com/@itomblack88/7-big-trends-in-branded-content-strategy-119a61405b2c'
+				},
+				{
+					phaseTitle: 'Welcome to the world of new retail',
+					url: 'https://medium.com/@itomblack88/welcome-to-the-world-of-new-retail-10157802db3a'
+				},
+				{
+					phaseTitle: 'How facebook deals with a breakup',
+					url: 'https://blog.prototypr.io/how-facebook-deals-with-a-breakup-df49fd879059'
+				},
+				{
+					phaseTitle: 'Always bring the hot chocolate',
+					url: 'https://medium.com/@itomblack88/always-bring-the-hot-chocolate-7a175df69f82'
+				},
+				
+			]
+		}
+	});
+
+
 
 
 
@@ -410,6 +466,18 @@ var about_journey = new Vue({
 		}
 		// ********** END ********** //
 
+if ( document.getElementById('fade-2') ) {
+	window.addEventListener('scroll', function() {
+
+		var fadeImg = document.getElementById('fade-2');
+	  var distanceToTop = fadeImg.getBoundingClientRect().top;
+
+	  var opacityLevel = 0 + ( distanceToTop / 1000 );
+	  fadeImg.style.opacity = opacityLevel;
+	  fadeImg.style.transform = "translateY( " + ( distanceToTop / 3 ) + "px )";
+
+	 });
+};
 
 
 
