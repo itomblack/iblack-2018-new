@@ -37,7 +37,7 @@ a {
 	min-height: 100vh;
   border-image: linear-gradient(to bottom, $blue 0%, $green 100%);
 	border-image-slice: 1;
-	padding-bottom: $xvlrg-pad;
+	padding-bottom: 72px;
 }
 
 .intro-wrap {
@@ -47,7 +47,7 @@ a {
   justify-content: center;
   height: 100vh;
   margin-bottom: 50vh;
-  max-width: 800px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -77,10 +77,10 @@ a {
 	display: inline-block;
   width: 100%;
 
-	.head-text { max-width: $medium; }
-
 	@media screen and (max-width: $medium) { margin-bottom: $vlrg-pad; }
 }
+
+.head-text { max-width: $medium; }
 
 
 
@@ -187,7 +187,7 @@ a {
 			&::before { transform: rotate( 90deg ); }
 		}
 
-		.link-underline:after { width: 100%; }
+		.link-underline::after { width: 100%; }
 	}
 }
 
@@ -197,15 +197,20 @@ a {
 	display: inline-block;
 	position: relative;
 
-	&::after {
+	&::before {
 	  content: '';
 	  position: absolute;
 	  width: 0;
+	  bottom: 0px;
 	  height: 3px;
 	  display: block;
 	  margin-top: -3px;
 	  background: $green;
 	  transition: width $short ease;
+	}
+
+	&:hover {
+		&::before { width: 100%; }
 	}
 }
 

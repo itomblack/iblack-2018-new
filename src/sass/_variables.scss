@@ -14,6 +14,7 @@ $blue: #4E74E3;
 .text-ink { color: $ink; }
 .text-white { color: $white; }
 .text-blue { color: $blue; }
+.text-green { color: $green; }
 
 
 //padding
@@ -41,6 +42,12 @@ $small: 500px;
 
 .marg-bot-0 { margin-bottom: 0; }
 .marg-bot-16 { margin-bottom: $reg-pad; }
+.marg-bot-32 { margin-bottom: $lrg-pad; }
 .marg-bot-xxvlrg { margin-bottom: $xxvlrg-pad; }
+
+.marg-top-32 { margin-top: $lrg-pad; }
+.marg-top-64 { margin-top: $vlrg-pad; }
+
+.inline-block { display: inline-block; }
 
 

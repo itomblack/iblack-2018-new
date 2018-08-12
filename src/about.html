@@ -2,7 +2,7 @@
 <html>
 <head>
   @@include('./inc/head.html')
-  <title>iBlack - CV</title>
+  <title>iBlack - About</title>
 </head>
 <body>
 	
@@ -12,20 +12,34 @@
 		<!-- <img v-if="(logo !== '')" src="img/icons/logo.svg"> -->
 
 		<!-- Intro -->
-		<div id="intro-cv">
-        @@include('./inc/components/lhs-intro.html')
+		<div id="intro-about">
+        @@include('./inc/components/page-intro.html')
     </div>
 
-    <!-- Education -->
-    <div id="education">
-			@@include('./inc/components/cv-education.html')
+    <!-- My Journey -->
+    <div id="about-journey">
+      @@include('./inc/components/section-header.html')
+      @@include('./inc/components/story.html')
     </div>
 
-    <!-- Education -->
-    <div id="employment">
-    	@@include('./inc/components/cv-jobs.html')
+
+
+    <!-- Testimonials -->
+     <div id="about-quotes">
+      
+      
     </div>
 
+
+
+    <!-- Selected writing -->
+     <div id="about-writing">
+      
+      
+    </div>
+
+
+   
 
     <!-- Contact -->
     <div id="contact">
