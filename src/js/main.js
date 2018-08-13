@@ -233,7 +233,7 @@ var other_contact = new Vue({
 			jobs: [
 				{
 					company: 'Green Stone',
-					description: 'A distributed experience design firm',
+					description: 'A distributed creative consultancy',
 					dates: 'Feb 2018 - Current',
 					url: 'https://www.greenstone.co/',
 					role: 'Experience Designer (Contract)',
