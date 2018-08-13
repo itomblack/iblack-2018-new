@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="Your friendly neighbourhood designer. Based in Vancouver. Come inside to find out more.">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- <script src="https://unpkg.com/vue"></script> -->
+<script src="js/vendor/vue.js"></script>
+<!-- <script src="js/vendor/vue.min.js"></script> -->
+  <title>iBlack - CV</title>
+</head>
+<body>
+	
+	<div id="app" class="page-wrap">
+
+    <!-- menu -->
+    <div class="set-menu-cv" id="menu">
+      <!-- <img v-if="(logo !== '')" src="img/icons/logo.svg"> -->
+
+<div class="menu-wrap">
+	<div class="border-adjust-wrap">
+		<img src="img/icons/logo.svg">
+		<ul>
+			 <li v-for="item in links" class="link-underline" v-bind:class="item.class">
+			 		<a v-bind:href="item.url" v-html="item.text"></a>
+			 </li>
+		</ul>
+	</div>
+</div>
+    </div>
+
+		<!-- Intro -->
+		<div id="intro-cv">
+        
+<div class="intro-wrap-lhs">
+	<!-- Text content -->
+	<div class="intro-text">
+		<h1 v-html="title"></h1>
+		<h2 v-html="subtitle"></h2>
+		<p v-html="blurb"></p>
+	</div>
+</div>
+    </div>
+
+    <!-- Education -->
+    <div id="education">
+			<!-- Education -->
+<div class="section-head-wrap">
+	<h2 class="marg-bot-32" v-html="title"></h2>
+
+	  <!-- Uni -->
+	  <div class="col-1-3 no-l-pad marg-bot-16 hidden animate">
+	    <p class="bold text-blue upper" v-html="uni"></p>
+	    <p v-html="degree"></p>
+	  </div>
+
+	  <!-- School -->
+	  <div class="col-2-3 no-pad-mob hidden animate">
+	    <p class="bold text-blue upper" v-html="school"></p>
+	    <ul>
+	      <li v-for="item in grades" v-html="item.level"></li>
+	    </ul>
+	  </div>
+
+</div>
+
+    </div>
+
+    <!-- Education -->
+    <div id="employment">
+    	<!-- jobs & skills -->
+
+<h2 v-html="title"></h2>
+
+  <!-- job now -->
+  <div class="marg-top-32 job-wrap hidden animate" v-for="item in jobs">
+    <!-- Company -->
+    <div class="col-1-3 no-l-pad">
+
+      <!-- with URL -->
+      <template v-if="(item.url !== '')">
+        <a v-bind:href="item.url" target="_blank">
+          <h4 class="link-underline" v-html="item.company"></h4>
+          <p class="no-tablet bold" v-html="item.description"></p>
+        </a>
+      </template>
+
+      <!-- withour URL -->
+       <template v-else>
+          <h4 v-html="item.company"></h4>
+          <p class="no-tablet bold" v-html="item.description"></p>
+        </a>
+      </template>
+
+      <p class="bold upper text-blue" v-html="item.dates"></p>
+    </div>
+
+    <!-- Role -->
+    <div class="col-2-3 no-pad-mob">
+      <h4 class="text-green bold" v-html="item.role"></h4>
+      <ul class="cv-bullets">
+        <li v-for="line in item.responsibilities" v-html="line.bullet"></li>
+      </ul>
+    </div>
+
+</div>
+
+
+       
+    </div>
+
+
+    <!-- Contact -->
+    <div id="contact">
+			<!-- If NO LINK -->
+<template v-if="(url == '')">
+	<div class="section-head-wrap">
+		<div class="head-text">
+			<h2 v-html="title"></h2>
+			<h6 v-html="subtitle"></h6>
+		</div>
+	</div>
+</template>
+
+<!-- If LINK -->
+<template v-else>
+	<div class="section-head-wrap">
+		<a v-bind:href="url" class="title-link width-50">
+			<div class="head-text">
+				<h2 class="link-underline" v-html="title"></h2>
+				<h6 v-html="subtitle"></h6>
+			</div>
+
+			<div class="arrow-roundel-green"></div>
+		</a>
+	</div>
+</template>
+
+
+
+		</div>
+		
+	</div><!-- close page-wrap -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>

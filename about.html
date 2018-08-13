@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="Your friendly neighbourhood designer. Based in Vancouver. Come inside to find out more.">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- <script src="https://unpkg.com/vue"></script> -->
+<script src="js/vendor/vue.js"></script>
+<!-- <script src="js/vendor/vue.min.js"></script> -->
+  <title>iBlack - About</title>
+</head>
+<body>
+	
+	<div id="app" class="page-wrap">
+
+		<!-- menu -->
+    <div class="set-menu-about" id="menu">
+      <!-- <img v-if="(logo !== '')" src="img/icons/logo.svg"> -->
+
+<div class="menu-wrap">
+	<div class="border-adjust-wrap">
+		<img src="img/icons/logo.svg">
+		<ul>
+			 <li v-for="item in links" class="link-underline" v-bind:class="item.class">
+			 		<a v-bind:href="item.url" v-html="item.text"></a>
+			 </li>
+		</ul>
+	</div>
+</div>
+    </div>
+		
+
+		<!-- Intro -->
+		<div id="intro-about">
+        
+<div class="intro-wrap">
+	<!-- Text content -->
+	<div class="intro-text">
+		<h1 v-html="title"></h1>
+		<h5 v-html="subtitle"></h5>
+	</div>
+	<!-- Image -->
+	<div class="intro-backimg" id="fade-img">
+	 	<img v-bind:src="'img/' + backImg" alt="" class="">
+	</div>
+</div>
+    </div>
+
+    <!-- My Journey -->
+    <div id="about-journey">
+      <!-- If NO LINK -->
+<template v-if="(url == '')">
+	<div class="section-head-wrap">
+		<div class="head-text">
+			<h2 v-html="title"></h2>
+			<h6 v-html="subtitle"></h6>
+		</div>
+	</div>
+</template>
+
+<!-- If LINK -->
+<template v-else>
+	<div class="section-head-wrap">
+		<a v-bind:href="url" class="title-link width-50">
+			<div class="head-text">
+				<h2 class="link-underline" v-html="title"></h2>
+				<h6 v-html="subtitle"></h6>
+			</div>
+
+			<div class="arrow-roundel-green"></div>
+		</a>
+	</div>
+</template>
+
+
+
+      <div class="text-rhs-img">
+	<p class="red" v-html="para"></p>
+	<img id="fade-2" v-bind:src="'img/' + img">
+</div>
+
+    </div>
+
+
+
+    <!-- Testimonials -->
+    <div id="about-quotes">
+      <!-- If NO LINK -->
+<template v-if="(url == '')">
+	<div class="section-head-wrap">
+		<div class="head-text">
+			<h2 v-html="title"></h2>
+			<h6 v-html="subtitle"></h6>
+		</div>
+	</div>
+</template>
+
+<!-- If LINK -->
+<template v-else>
+	<div class="section-head-wrap">
+		<a v-bind:href="url" class="title-link width-50">
+			<div class="head-text">
+				<h2 class="link-underline" v-html="title"></h2>
+				<h6 v-html="subtitle"></h6>
+			</div>
+
+			<div class="arrow-roundel-green"></div>
+		</a>
+	</div>
+</template>
+
+
+
+      <div class="central-col">
+	<div class="testimonial hidden animate" v-for="item in quotes">
+		<h6 v-html="item.quote"></h6>
+		<h6 class="bold" v-html="item.name"></h6>
+		<p class="bold upper text-blue" v-html="item.company"></p>
+	</div>
+</div>
+      
+    </div>
+
+
+
+    <!-- Selected writing -->
+     <div id="about-writing">
+      <!-- If NO LINK -->
+<template v-if="(url == '')">
+	<div class="section-head-wrap">
+		<div class="head-text">
+			<h2 v-html="title"></h2>
+			<h6 v-html="subtitle"></h6>
+		</div>
+	</div>
+</template>
+
+<!-- If LINK -->
+<template v-else>
+	<div class="section-head-wrap">
+		<a v-bind:href="url" class="title-link width-50">
+			<div class="head-text">
+				<h2 class="link-underline" v-html="title"></h2>
+				<h6 v-html="subtitle"></h6>
+			</div>
+
+			<div class="arrow-roundel-green"></div>
+		</a>
+	</div>
+</template>
+
+
+
+      <ul class=central-col>
+  <li class="process-link hidden animate" v-for="item in phases">
+  	<a v-bind:href="item.url" target="_blank">
+			<p class="bold upper text-blue marg-bot-0" v-html="item.phaseNum"></p>
+			<h3 class="marg-bot-0 link-underline" v-html="item.phaseTitle"></h3>
+			<p class="marg-bot-0" v-html="item.description"></p>
+
+			<div class="arrow-roundel-green"></div>
+		</a>	
+	</li>
+</ul>
+    </div>
+
+
+   
+
+    <!-- Contact -->
+    <div id="contact">
+			<!-- If NO LINK -->
+<template v-if="(url == '')">
+	<div class="section-head-wrap">
+		<div class="head-text">
+			<h2 v-html="title"></h2>
+			<h6 v-html="subtitle"></h6>
+		</div>
+	</div>
+</template>
+
+<!-- If LINK -->
+<template v-else>
+	<div class="section-head-wrap">
+		<a v-bind:href="url" class="title-link width-50">
+			<div class="head-text">
+				<h2 class="link-underline" v-html="title"></h2>
+				<h6 v-html="subtitle"></h6>
+			</div>
+
+			<div class="arrow-roundel-green"></div>
+		</a>
+	</div>
+</template>
+
+
+
+		</div>
+		
+	</div><!-- close page-wrap -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
