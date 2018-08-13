@@ -1,10 +1,8 @@
-<!-- <img v-if="(logo !== '')" src="img/icons/logo.svg"> -->
-
 <div class="menu-wrap">
 	<div class="border-adjust-wrap">
-		<img src="img/icons/logo.svg">
+		<a href="index.html"><img src="img/icons/logo.svg"></a>
 		<ul>
-			 <li v-for="item in links" class="link-underline" v-bind:class="item.class">
+			 <li v-for="item in links" class="link-underline menu-item" v-bind:class="item.class">
 			 		<a v-bind:href="item.url" v-html="item.text"></a>
 			 </li>
 		</ul>

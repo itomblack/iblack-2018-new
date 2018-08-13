@@ -38,6 +38,17 @@ a {
   border-image: linear-gradient(to bottom, $blue 0%, $green 100%);
 	border-image-slice: 1;
 	padding-bottom: 72px;
+	background: $white;
+	z-index: 2;
+
+	opacity: 0;
+	top: 30px;
+	transition: all $mid ease;
+
+	&.js-reveal {
+		opacity: 1;
+		top: 0px;
+	}
 }
 
 .intro-wrap {
@@ -195,6 +206,8 @@ a {
 .title-link {
 	position: relative;
 	display: inline-block;	
+	padding-right: 60px;
+	@media screen and (min-width: $medium) { padding-right: 30px; }
 }
 
 
@@ -218,7 +231,7 @@ a {
 			&::before { transform: rotate( 90deg ); }
 		}
 
-		.link-underline::after { width: 100%; }
+		.link-underline::before { width: 100%; }
 	}
 }
 
@@ -315,6 +328,7 @@ a {
 		left: -30px;
 		top: 66px;
 		z-index: 50;
+		box-shadow: 0 0 3px rgba(0,0,0,.2);
 	}
 
 	@media screen and (max-width: $large) { 
@@ -384,6 +398,37 @@ a {
 
 
 
+
+
+
+//===============================================================================
+// Loader
+//===============================================================================
+.loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: blue;
+	z-index: 0;
+
+
+	background: linear-gradient(273deg, $green, $blue);
+	background-size: 400% 400%;
+
+	animation: pageFade 5s ease infinite;
+
+	
+	
+}
+
+
+@keyframes pageFade { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
 
 
 
