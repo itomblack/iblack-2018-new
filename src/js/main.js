@@ -59,7 +59,7 @@ var menu = new Vue({
 		el: "#intro-home",
 		data: {
 			title: 'Designing future brand experiences',
-			subtitle: 'Your partner for strategic design. I specialize in digital products & customer experience',
+			subtitle: 'Your partner for strategic design – I specialize in digital products & customer experience',
 			backImg: 'photos/mountain.png'
 		}
 	});
@@ -420,7 +420,7 @@ var about_quotes = new Vue({
 		el: "#about-quotes",
 		data: {
 			title: 'Testimonials',
-			subtitle: 'A few words from my clients & colleagues',
+			subtitle: 'A few kind words from clients & colleagues',
 			url: '',
 			quotes: [
 				{ name: 'Murray McCutcheon',
@@ -480,29 +480,113 @@ var about_articles = new Vue({
 		data: {
 			phases: [
 				{
-					id: 'proj-design',
-					title: 'Design',
-					subtitle: 'AbCellera',
-					summary: 'An Innovative Approach to Antibody Exploration',
-					para: 'This Vancouver based Biotech startup had developed the world’s leading technology for screening and mapping of natural immune responses. They needed help transforming their software from a functional – yet frustrating – experience into a scalable product they could be proud of as a brand.</br></br>I identified core problems through a week of in-depth user research, defined a 3-phase strategy, and delivered a holistic core product redesign, designed to tackle each frustration seen during the initial product testing. We celebrated completion of phase one with team donuts. Delicious!',
+					id: 'proj-workshop',
+					title: 'Workshops',
+					casestudy: 'Example case study',
+					subtitle: 'Vancity',
+					summary: 'A Customer-Focussed Approach To Financial Wellbeing',
+					para: 'This major Canadian financial institution knew they needed a best-in-class experience for their digitally-savvy, socially-conscious customers, but weren’t sure what that actually meant… so I helped them figure it out.</br></br>Tapping into expert knowledge from staff throughout their customer service teams, together we mapped the existing customers experience, identifying key pain points to explore in the research phase. After pinning down an initial strategy, I ran ideation workshops to generate and refine ideas for a prototype. Many of the team had never sketched before, but did an amazing job of getting stuck in with pens and paper.',
 					images: [
-						{ oneImage: 'work/abc-1.jpg' },
-						{ oneImage: 'work/abc-2.jpg' },
-						{ oneImage: 'work/abc-3.jpg' },
-						{ oneImage: 'work/abc-4.jpg' }
+						{ oneImage: 'work/work-1.jpg' },
+						{ oneImage: 'work/work-2.jpg' },
+						{ oneImage: 'work/work-3.jpg' },
+						{ oneImage: 'work/work-4.jpg' }
 					]
 				},
 				{
-					id: 'proj-reseach',
+					id: 'proj-research',
 					title: 'Research',
-					subtitle: 'Lalala',
-					summary: 'lololo',
-					para: 'Hoo ha hee',
+					casestudy: 'Example case study',
+					subtitle: 'AbCellera',
+					summary: 'An Innovative Approach to Antibody Exploration',
+					para: 'This Vancouver-based Biotech startup had developed the world’s leading technology for screening and mapping of natural immune responses. Their development team had built a unique data visualization product that enabled scientists to explore their antibody data in a revolutionary new way, but were struggling with how to expand the feature set without compromising on usability.</br></br>Combining a series of contextual interviews with a heuristic audit, I delivered insight into the core product problems, and mapped out a strategy for change. I followed up with a UX & UI overhaul to address each opportunity. The team were delighted at the end of it, but that could have been because of the celebratory donuts we ate that day!',
 					images: [
-						{ oneImage: 'work/abc-2.jpg' },
-						{ oneImage: 'work/abc-2.jpg' },
+						{ oneImage: 'work/rsrch-1.jpg' },
+						{ oneImage: 'work/rsrch-2.jpg' },
+						{ oneImage: 'work/rsrch-3.jpg' },
+						{ oneImage: 'work/rsrch-4.jpg' },
+						{ oneImage: 'work/rsrch-5.jpg' }
 					]
 				},
+				{
+					id: 'proj-strategy',
+					title: 'Strategy',
+					casestudy: 'Example case study',
+					subtitle: 'Finish line',
+					summary: 'Connecting Content with Commerce',
+					para: 'This American athletics retail brand needed some fresh thinking on their content strategy. How could they use written word to drive higher sales on their e-commerce sites? Through an audit of their competitive landscape, I delivered a presentation of best-in-class content creator brands, alongside the major strategies they needed to adopt in order to remain a key player in the game. It\'s a bit hush, hush though.',
+					images: [
+						{ oneImage: 'work/strat-1.jpg' },
+						{ oneImage: 'work/strat-2.jpg' }
+					]
+				},
+				{
+					id: 'proj-design',
+					title: 'Design',
+					casestudy: 'Example case study',
+					subtitle: 'Travelaer',
+					summary: 'Customer-centric Airline Upgrades',
+					para: 'This European product company creates digital products for the travel industry that enable their partners to improve their customer experience and increase revenue. Having identified an opportunity to deliver simpler, smarter, targeted upgrades to frequent flyers, they needed help auditing the competitive landscape, designing the end-to-end customer experience on mobile, and piecing it all together into powerful pitch deck with a compelling story to approach the airlines with. They were delighted with where we landed.',
+					images: [
+						{ oneImage: 'work/des-1.jpg' },
+						{ oneImage: 'work/des-2.jpg' },
+						{ oneImage: 'work/des-3.jpg' },
+						{ oneImage: 'work/des-4.jpg' },
+					]
+				},
+				{
+					id: 'proj-prototyping',
+					title: 'Prototyping',
+					casestudy: 'Example case study',
+					subtitle: 'Hitsource',
+					summary: 'A Brand New Music Maker’s Marketplace',
+					para: 'After leaving the performance side of the hip-hop game, this client dreamt of building an invite-only marketplace for buying & selling hip-hop beats. I brought their vision to life by defining the MVP, developing a new brand identity, designing the user experience and creating a high fidelity prototype of the complete digital product.',
+					images: [
+						{ oneImage: 'work/proto-1.jpg' },
+						{ oneImage: 'work/proto-4.jpg' },
+						{ oneImage: 'work/proto-2.jpg' },
+						{ oneImage: 'work/proto-3.jpg' }
+					]
+				},
+				{
+					id: 'proj-testing',
+					title: 'Testing',
+					casestudy: 'Example case study',
+					subtitle: 'TravelSupermarket',
+					summary: 'A/B Testing For Online Deal Comparison',
+					para: 'Helping TravelSupermarket deliver business results required super targeted design work, thoroughly tested to hit KPIs. As an embedded member of their design team, leading the UX, I designed a number of search results cards based on key customer insights. Each redesign was assessed by senior management before being subject to live A/B testing with thousands of users. Sometimes the results surprised us, but every time we managed to increase conversion rates by percentage points, creating a increasingly successful product, and a very happy client.',
+					images: [
+						{ oneImage: 'work/test-1.jpg' },
+						{ oneImage: 'work/test-2.jpg' },
+						{ oneImage: 'work/test-3.jpg' },
+						{ oneImage: 'work/test-4.jpg' }
+					]
+				},
+				{
+					id: 'proj-development',
+					title: 'Development',
+					casestudy: 'Example case study',
+					subtitle: 'The Quarry',
+					summary: 'Connecting A Remote Network',
+					para: 'Green Stone had an intimate network of experts at their fingertips, but struggled with opening up that resource to help others. How could people who have never met discover key new contacts? Combining the data stored in their digital black book of names, with content taken from public LinkedIn profiles, I developed a browsable, searchable, visual index of the network as a proof of concept. By combining this with private social space through Facebook, we now had a system where people could find individuals with specific skills, and reach out to them in a trusted, secure setting. It was the first step in one agency\'s goal to give back to their design community.',
+					images: [
+						{ oneImage: 'work/dev-1.jpg' },
+						{ oneImage: 'work/dev-2.jpg' },
+						{ oneImage: 'work/dev-3.jpg' },
+					]
+				},
+				{
+					id: 'proj-hotchocolate',
+					title: 'Hot Chocolate',
+					casestudy: '',
+					subtitle: 'A Little Perspective',
+					summary: 'Sometimes it\'s just what you need',
+					para:  'It’s easy to map the design process as this fixed, linear process. Just follow the path to success and that’s all it takes, right? Sometimes, sure, but design doesn’t just happen at a desk. We all know the cliche that the best ideas come to us in the shower. The mind needs time to relax, to digest, to process, to loosely wander.</br></br>For me, this means stopping every once in a while to take a breath, or a stroll. To sit down with my thoughts or with a friend. To let things stew, or to talk things through. At a cafe, by the beach or in the mountains. But, most importantly, with a fresh bowl of rich, dark hot chocolate warming my hands and my soul. Because we all need that little escape. A little perspective. A little chocolate.</br></br>It’s all part of the process.',
+					images: [
+						{ oneImage: 'work/hot-1.jpg' }
+					]
+				},
+				
 						
 			]
 		}
@@ -530,6 +614,7 @@ if ( document.getElementById('modal') ) {
 		var modal = document.getElementById('modal');
 		var closeBtn = document.getElementById('close-modal');
 		var closePanel = document.getElementById('close-panel');
+		var project;
 
 
 		for (var i = 0; i < processElements.length; i++) {
@@ -537,14 +622,14 @@ if ( document.getElementById('modal') ) {
 		    
 		  	//get ID
 		    var processId = this.id;
-		    console.log(processId)
 		    var showProjectId = processId.replace("open", "proj");
-		    console.log(showProjectId);
 
 		    //open modal
 		    modal.classList.add("js-open-modal") ;
 
 		    //show section
+		    project = document.getElementById( '' + showProjectId + '' );
+		    project.classList.add("js-show");
 
 
 
@@ -554,17 +639,22 @@ if ( document.getElementById('modal') ) {
 
 		// close button or close on cover-click
 		closeBtn.addEventListener("click", function() {
-			modal.classList.remove("js-open-modal") ;
+			hideProject();
 		});
 
 		closePanel.addEventListener("click", function() {
-			modal.classList.remove("js-open-modal") ;
+			hideProject();
 		});
 
 	} //end if modal exists
 
 
-
+var hideProject = function() {
+	//remove shown project
+	project.classList.remove("js-show");
+	//close modal
+	modal.classList.remove("js-open-modal");
+}
 
 
 
@@ -627,22 +717,53 @@ if ( document.getElementById('modal') ) {
 			};
 
 
-
-
-
-
-
-
 		});
 		// ********** END SCROLL STUFF ********** //
 
 
-window.addEventListener('scroll', function() {
 
-	
-});
+		var animateHTML = function () {
+		  // only call scroll events every 100ms
+		  var didScroll = false;
+		  window.onscroll = doThisStuffOnScroll;
+		  function doThisStuffOnScroll() {
+		      didScroll = true;
+		  }
+		  setInterval( function() {
+		      if ( didScroll ) {
+		          didScroll = false;
+		          // console.log('You scrolled');
+		          checkPosition();
+		          menuShow();
+		      }
+		  }, 5);
 
 
+		 //show elements when on screen
+    var elems,
+      windowHeight;
+    var init = function () {
+      elems = document.getElementsByClassName('hidden');
+      windowHeight = window.innerHeight;
+      addEventHandlers();
+    };
+    var addEventHandlers = function () {
+      window.addEventListener( 'resize', init );
+    };
+    //if hidden items have moved onto screen, then show
+    var checkPosition = function () {
+      for (var i = 0; i < elems.length; i++) {
+        var posFromTop = elems[i].getBoundingClientRect().top;
+        if ( posFromTop - windowHeight <= -75 ) {
+          elems[i].className = elems[i].className.replace( 'hidden', 'fade-in-element' );
+        }
+      }
+    };
+    return {
+      init: init
+    };
+  };
+  animateHTML().init();
 
 
 

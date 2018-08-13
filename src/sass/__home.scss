@@ -318,7 +318,27 @@ a {
 		top: 66px;
 		z-index: 50;
 	}
+
+	@media screen and (max-width: $large) { 
+		width: 61%;
+	}
+
+	@media screen and (max-width: $medium) { 
+		width: 80%;
+		.close-roundel { top: 56px; }
+	}
+
+	@media screen and (max-width: $small) { 
+		width: 100%;
+		.close-roundel {
+			top: 50px;
+			right: 32px;
+			left: auto;
+		}
+	}
 }
+
+
 
 .project-wrap {
 	height: 100vh;
@@ -326,12 +346,18 @@ a {
 	position: absolute;
 	top: 0;
 	opacity: 0;
+	z-index: -1;
+	transition: all $long ease;
+
+	&.js-show {
+		opacity: 1;
+		z-index: 40;
+	}
 
 	img {
 		width: 100%;
 		margin: 12px 0;
 	}
-	
 }
 
 .wrap-padding {
@@ -350,7 +376,12 @@ a {
 
 
 
+.hidden {
+  opacity: 0;
+  transform: translateY( 48px );
+}
 
+.animate { transition: all $mid ease; } 
 
 
 

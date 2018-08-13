@@ -7,12 +7,12 @@
 			<div id="close-modal" class="close-roundel"></div>
 
 			<!-- projects -->
-			<div  v-for="item in phases" v-bind:id="item.id" class="project-wrap">
+			<div v-for="item in phases" v-bind:id="item.id" class="project-wrap">
 
 				<!-- Intro text -->
 				<div class="wrap-padding">
 					<h2 class="text-white" v-html="item.title"></h2>
-					<p class="bold upper text-blue add-marg">Example Case Study</p>
+					<p class="bold upper text-blue add-marg" v-html="item.casestudy"></p>
 					<h3 class="text-white" v-html="item.subtitle"></h3>
 					<h6 class="text-white" v-html="item.summary"></h6>
 					<p class="text-white marg-top-32 " v-html="item.para"></p>
