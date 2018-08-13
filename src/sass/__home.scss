@@ -230,8 +230,11 @@ a {
 			&::after { transform: rotate( 0deg ); }
 			&::before { transform: rotate( 90deg ); }
 		}
-
-		.link-underline::before { width: 100%; }
+		
+		@media screen and (min-width: $medium) { 
+			.link-underline::before { width: 100%; }
+		}
+		
 	}
 }
 
