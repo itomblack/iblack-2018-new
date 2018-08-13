@@ -72,7 +72,7 @@ var menu = new Vue({
 					id: 'open-research',
 					phaseNum: '02',
 					phaseTitle: 'Research',
-					description: 'Identifying where we\'re at & where we want to be'
+					description: 'Identifying where we are, & where customers expect us to be'
 				},
 				{
 					id: 'open-strategy',
@@ -90,7 +90,7 @@ var menu = new Vue({
 					id: 'open-prototyping',
 					phaseNum: '05',
 					phaseTitle: 'Prototyping',
-					description: 'Simulation change, for the purpose of testing'
+					description: 'Simulating change, for testing with real people'
 				},
 				{
 					id: 'open-testing',
@@ -512,7 +512,7 @@ var about_articles = new Vue({
 					casestudy: 'Example case study',
 					subtitle: 'AbCellera',
 					summary: 'An Innovative Approach to Antibody Exploration',
-					para: 'This Vancouver-based Biotech startup had developed the world’s leading technology for screening & mapping of natural immune responses. Their development team had built a unique data visualization product that enabled scientists to explore their antibody data in a revolutionary new way, but were struggling with how to expand the feature set without compromising on usability.</br></br>Combining a series of contextual interviews with a heuristic audit, I delivered insight into the core product problems, & mapped out a strategy for change. I followed up with a UX & UI overhaul to address each opportunity. The team were delighted at the end of it, but that could have been because of the celebratory donuts we ate that day!',
+					para: 'This Vancouver-based Biotech startup had developed the world’s leading technology for screening & mapping of natural immune responses. Their development team had built a unique data visualization product that enabled scientists to explore their antibody data in a revolutionary new way, but were struggling with how to expand the feature set without compromising on usability.</br></br> I combining a series of contextual user interviews with a heuristic audit, to deliver insight into the core product problems experienced by their customers. I mapped out a strategy for change, & followed up with a UX & UI overhaul to address each opportunity. The team were delighted at the end of it, but that could have just been the celebratory donuts we ate that day!',
 					images: [
 						{ oneImage: 'work/rsrch-1.jpg' },
 						{ oneImage: 'work/rsrch-2.jpg' },
