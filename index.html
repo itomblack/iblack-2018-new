@@ -12,9 +12,8 @@
 
 <link rel="stylesheet" href="css/styles.css">
 
-<!-- <script src="https://unpkg.com/vue"></script> -->
-<script src="js/vendor/vue.js"></script>
-<!-- <script src="js/vendor/vue.min.js"></script> -->
+<!-- <script src="js/vendor/vue-dev.js"></script> -->
+<script src="js/vendor/vue.min.js"></script>
   <title>iBlack - Process</title>
 </head>
 <body>
@@ -23,21 +22,17 @@
 
 		<!-- menu -->
     <div class="set-menu-process" id="menu">
-      <!-- <img v-if="(logo !== '')" src="img/icons/logo.svg"> -->
-
-<div class="menu-wrap">
+      <div class="menu-wrap">
 	<div class="border-adjust-wrap">
-		<img src="img/icons/logo.svg">
+		<a href="index.html"><img src="img/icons/logo.svg"></a>
 		<ul>
-			 <li v-for="item in links" class="link-underline" v-bind:class="item.class">
+			 <li v-for="item in links" class="link-underline menu-item" v-bind:class="item.class">
 			 		<a v-bind:href="item.url" v-html="item.text"></a>
 			 </li>
 		</ul>
 	</div>
 </div>
     </div>
-
-
 
 		<!-- process-modal -->
 		<div id="modal" class="modal-wrap">
@@ -77,8 +72,6 @@
 
 
 </div>
-		
-
 
 		<!-- Intro -->
 		<div id="intro-home">
@@ -95,8 +88,6 @@
 	</div>
 </div>
     </div>
-		
-
 		
 		<!-- Process -->
 		<div id="process">
@@ -127,7 +118,7 @@
 
 
         <ul class=central-col>
-  <li class="process-link hidden animate" v-for="item in phases" v-bind:id="item.id">
+  <li class="process-link modal-link hidden animate" v-for="item in phases" v-bind:id="item.id">
 		<h6 class="bold upper text-blue marg-bot-0" v-html="item.phaseNum"></h6>
 		<h3 class="marg-bot-0 link-underline" v-html="item.phaseTitle"></h3>
 		<p class="marg-bot-0" v-html="item.description"></p>
@@ -136,7 +127,6 @@
 	</li>
 </ul>
     </div>
-
 
 		<!-- Clients -->
 		<div id="clients">
@@ -172,7 +162,6 @@
 	</li>
 </ul>
     </div>
-
 
 		<!-- Experiments -->
 		<div id="experiments">
@@ -216,7 +205,7 @@
 		</div>
 
 		<!-- Contact -->
-		<div id="contact">
+		<div id="home_contact">
 			<!-- If NO LINK -->
 <template v-if="(url == '')">
 	<div class="section-head-wrap">
@@ -248,6 +237,10 @@
 
 	</div><!-- close page-wrap -->
 
+	<!-- LOADER -->
+	<div class="loader"></div>
+
+	
   <script src="js/main.js"></script>
 </body>
 </html>

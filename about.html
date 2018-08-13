@@ -12,9 +12,8 @@
 
 <link rel="stylesheet" href="css/styles.css">
 
-<!-- <script src="https://unpkg.com/vue"></script> -->
-<script src="js/vendor/vue.js"></script>
-<!-- <script src="js/vendor/vue.min.js"></script> -->
+<!-- <script src="js/vendor/vue-dev.js"></script> -->
+<script src="js/vendor/vue.min.js"></script>
   <title>iBlack - About</title>
 </head>
 <body>
@@ -23,13 +22,11 @@
 
 		<!-- menu -->
     <div class="set-menu-about" id="menu">
-      <!-- <img v-if="(logo !== '')" src="img/icons/logo.svg"> -->
-
-<div class="menu-wrap">
+      <div class="menu-wrap">
 	<div class="border-adjust-wrap">
-		<img src="img/icons/logo.svg">
+		<a href="index.html"><img src="img/icons/logo.svg"></a>
 		<ul>
-			 <li v-for="item in links" class="link-underline" v-bind:class="item.class">
+			 <li v-for="item in links" class="link-underline menu-item" v-bind:class="item.class">
 			 		<a v-bind:href="item.url" v-html="item.text"></a>
 			 </li>
 		</ul>
@@ -89,8 +86,6 @@
 
     </div>
 
-
-
     <!-- Testimonials -->
     <div id="about-quotes">
       <!-- If NO LINK -->
@@ -126,10 +121,7 @@
 		<p class="bold upper text-blue" v-html="item.company"></p>
 	</div>
 </div>
-      
     </div>
-
-
 
     <!-- Selected writing -->
      <div id="about-writing">
@@ -172,11 +164,8 @@
 </ul>
     </div>
 
-
-   
-
     <!-- Contact -->
-    <div id="contact">
+    <div id="about_next">
 			<!-- If NO LINK -->
 <template v-if="(url == '')">
 	<div class="section-head-wrap">
@@ -206,6 +195,9 @@
 		</div>
 		
 	</div><!-- close page-wrap -->
+
+  <!-- LOADER -->
+  <div class="loader"></div>
 
   <script src="js/main.js"></script>
 </body>
