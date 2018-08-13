@@ -410,7 +410,7 @@ var about_journey = new Vue({
 		title: 'My journey',
 		subtitle: 'Life began in London, England.',
 		url: '',
-		para: '18 years later I began studying to be an Architect. Keen for a faster paced industry, I took my first design role out of University as a Graphic Designer in a boutique brand strategy agency. </br></br>Following years of excellent mentorship, I dove into the world of UI design & development, before continuing into the burgeoning discipline of User Experience. </br></br>I later moved across the Atlantic to Vancouver, to explore the wilderness. When I’m not at my desk you’ll find me lugging my camera up mountains, catching waves at sunset or digging my snowboard out of waist-deep white powder.</br></br>I’ve touched on many aspects of design over the years – from the built landscape to virtual environments – but the focus has always been about delivering value, for real people.',
+		para: '18 years later I began studying to be an Architect. Keen for a faster paced industry, I took my first design role out of University as a Graphic Designer in a boutique brand strategy agency. </br></br>Following years of excellent mentorship & self-driven learning, I dove into the world of UI design & development, before continuing into the burgeoning discipline of User Experience. </br></br>I later moved across the Atlantic to Vancouver, to explore the wilderness. When I’m not at my desk you’ll find me lugging my camera up mountains, catching waves at sunset or digging my snowboard out of waist-deep white powder.</br></br>I’ve touched on many aspects of design over the years – from the built landscape to virtual environments – but the focus has always been about delivering value, for real people.',
 		img: 'photos/me-2.png'
 	}
 });
