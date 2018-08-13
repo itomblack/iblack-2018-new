@@ -97,12 +97,10 @@ a {
 
 	@media screen and (max-width: $medium) {
     transform: scale(0.75);
-    // top: calc(50% - 30px);
   }
 
   @media screen and (max-width: $small) {
     transform: scale(0.5);
-    // top: calc(50% - 15px);
   }
 
  }
@@ -132,7 +130,7 @@ a {
 
 .arrow-roundel-green {
   &::after, &::before {
-		content: url('/img/icons/arrow-white.svg');
+		content: url('../img/icons/arrow-white.svg');
 		position: absolute;
 		transition: all $short ease;
   }
