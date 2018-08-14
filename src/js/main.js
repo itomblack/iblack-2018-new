@@ -90,7 +90,7 @@ var menu = new Vue({
 					id: 'open-prototyping',
 					phaseNum: '05',
 					phaseTitle: 'Prototyping',
-					description: 'Simulating change, for testing with real people'
+					description: 'Simulating change, to test with real people'
 				},
 				{
 					id: 'open-testing',
@@ -114,6 +114,129 @@ var menu = new Vue({
 			]
 		}
 	});
+
+
+
+
+	var home_stage_details = new Vue({
+			el: "#modal-panel",
+			data: {
+				phases: [
+					{
+						id: 'proj-workshop',
+						title: 'Workshops',
+						casestudy: 'Example case study',
+						subtitle: 'Vancity',
+						summary: 'A customer-focussed approach to financial wellbeing',
+						para: 'This major Canadian financial institution knew they needed a best-in-class experience for their digitally-savvy, socially-conscious customers, but weren’t sure what that actually meant…so I helped them figure it out.</br></br>Tapping into expert knowledge from staff throughout their customer service teams, together we mapped the existing customer experience, identifying key pain points for exploration in the research phase. After pinning down an initial strategy, I ran ideation workshops to generate & refine ideas for a prototype. Many of the team had never sketched before, yet did an amazing job of getting stuck in with pen & paper.',
+						images: [
+							{ oneImage: 'work/work-1.jpg' },
+							{ oneImage: 'work/work-2.jpg' },
+							{ oneImage: 'work/work-3.jpg' },
+							{ oneImage: 'work/work-4.jpg' }
+						]
+					},
+					{
+						id: 'proj-research',
+						title: 'Research',
+						casestudy: 'Example case study',
+						subtitle: 'AbCellera',
+						summary: 'An innovative approach to antibody exploration',
+						para: 'This Vancouver-based biotech startup had developed the world’s leading technology for screening & mapping natural immune responses. Their development team had built a unique data visualization product, enabling scientists to explore their antibody data in a revolutionary new way, but were struggling with how to expand the feature set without compromising on usability.</br></br> I combined a series of contextual user interviews with a heuristic audit, to deliver insight into the core product problems experienced by their customers. I mapped out a strategy for change, & followed up with a UX & UI overhaul to address each opportunity. The team were delighted at the end of it, but that could have just been the celebratory donuts we ate that day!',
+						images: [
+							{ oneImage: 'work/rsrch-1.jpg' },
+							{ oneImage: 'work/rsrch-2.jpg' },
+							{ oneImage: 'work/rsrch-3.jpg' },
+							{ oneImage: 'work/rsrch-4.jpg' },
+							{ oneImage: 'work/rsrch-5.jpg' }
+						]
+					},
+					{
+						id: 'proj-strategy',
+						title: 'Strategy',
+						casestudy: 'Example case study',
+						subtitle: 'Finish Line',
+						summary: 'Connecting content with commerce',
+						para: 'This American athletics retail brand needed some fresh thinking on their content strategy. How could they use the written word to drive higher sales on their e-commerce sites? Following an audit of their competitive landscape, I delivered a presentation of best-in-class content creator brands, alongside the major strategies Finish Line needed to adopt in order to remain a key player in the game. It\'s a bit hush, hush though.',
+						images: [
+							{ oneImage: 'work/strat-1.jpg' },
+							{ oneImage: 'work/strat-2.jpg' }
+						]
+					},
+					{
+						id: 'proj-design',
+						title: 'Design',
+						casestudy: 'Example case study',
+						subtitle: 'Travelaer',
+						summary: 'Customer-centric airline upgrades',
+						para: 'This European company creates digital products for the travel industry that improve their partner\'s customer experience & increase revenue. Having identified an opportunity to deliver simpler, smarter, targeted upgrades to frequent flyers, they needed help auditing the competitive landscape, designing the end-to-end customer experience, & piecing it all together into powerful pitch deck with a compelling story to approach the airlines with. They were delighted with where we landed.',
+						images: [
+							{ oneImage: 'work/des-1.jpg' },
+							{ oneImage: 'work/des-2.jpg' },
+							{ oneImage: 'work/des-3.jpg' },
+							{ oneImage: 'work/des-4.jpg' },
+						]
+					},
+					{
+						id: 'proj-prototyping',
+						title: 'Prototyping',
+						casestudy: 'Example case study',
+						subtitle: 'Hitsource',
+						summary: 'A brand new nusic naker’s marketplace',
+						para: 'After leaving the performance side of the hip-hop game, this client dreamt of building an invite-only marketplace for buying & selling hip-hop beats. I brought their vision to life by defining the MVP, developing a new brand identity, designing the user experience & creating a high-fidelity prototype of the complete digital product.',
+						images: [
+							{ oneImage: 'work/proto-1.jpg' },
+							{ oneImage: 'work/proto-4.jpg' },
+							{ oneImage: 'work/proto-2.jpg' },
+							{ oneImage: 'work/proto-3.jpg' }
+						]
+					},
+					{
+						id: 'proj-testing',
+						title: 'Testing',
+						casestudy: 'Example case study',
+						subtitle: 'TravelSupermarket',
+						summary: 'A/B testing for online deal comparison',
+						para: 'Helping TravelSupermarket deliver business results required super targeted design work, thoroughly tested to hit KPIs. As an embedded member of their design team, leading the UX, I designed a number of search results cards based on key customer insights. Each redesign was assessed by senior management before being subject to live A/B testing with thousands of users. Sometimes the results surprised us, but every time we managed to increase conversion rates by percentage points, creating a increasingly successful product, & one very happy client.',
+						images: [
+							{ oneImage: 'work/test-1.jpg' },
+							{ oneImage: 'work/test-2.jpg' },
+							{ oneImage: 'work/test-3.jpg' },
+							{ oneImage: 'work/test-4.jpg' }
+						]
+					},
+					{
+						id: 'proj-development',
+						title: 'Development',
+						casestudy: 'Example case study',
+						subtitle: 'The Green Stone Quarry',
+						summary: 'Connecting a remote network',
+						para: 'This fully distributed design agency had an intimate network of experts at their digital fingertips, but struggled with opening up that resource to help others. How could people who have never met discover key new contacts? Combining the data stored in their digital black book of names, with content taken from public LinkedIn profiles, I developed a browsable, searchable, visual index of the network as a proof of concept. By combining this with a private social online space through Facebook, we now had a system where people could find individuals with specific skills, & reach out to them in a trusted, secure setting. It was the first step in one agency\'s goal to give back to their design community.',
+						images: [
+							{ oneImage: 'work/dev-1.jpg' },
+							{ oneImage: 'work/dev-2.jpg' },
+							{ oneImage: 'work/dev-3.jpg' },
+						]
+					},
+					{
+						id: 'proj-hotchocolate',
+						title: 'Hot Chocolate',
+						casestudy: '',
+						subtitle: 'A Little Perspective',
+						summary: 'Could be just what you need',
+						para:  'It’s easy to map the design process as this fixed, linear process. Follow the path to success, & that’s that, right? Sometimes, sure, but design doesn’t just happen at a desk. You know the cliché that the best ideas come to you in the shower? That\'s because the mind needs time to relax. To digest. To process. To loosely wander.</br></br>For me, this means stopping occasionally to take a breath, or a stroll. To sit alone with my thoughts or together with a friend. To let things stew, or talk things through. At a cafe, by the beach, or in the mountains. But, most importantly, with a fresh bowl of rich, dark, hot chocolate warming my hands & my soul. Because we all need that little escape. A little perspective. A little chocolate.</br></br>It’s all part of the process.',
+						images: [
+							{ oneImage: 'work/hot-1.jpg' }
+						]
+					},
+					
+							
+				]
+			}
+		});
+
+
+
 
 
 	var home_clients = new Vue({
@@ -485,125 +608,6 @@ var about_articles = new Vue({
 
 
 
-// ******************* PROCESS STAGES ***************** //
-// ********** ************************ *************** //
-
-var about_articles = new Vue({
-		el: "#modal-panel",
-		data: {
-			phases: [
-				{
-					id: 'proj-workshop',
-					title: 'Workshops',
-					casestudy: 'Example case study',
-					subtitle: 'Vancity',
-					summary: 'A Customer-Focussed Approach To Financial Wellbeing',
-					para: 'This major Canadian financial institution knew they needed a best-in-class experience for their digitally-savvy, socially-conscious customers, but weren’t sure what that actually meant… so I helped them figure it out.</br></br>Tapping into expert knowledge from staff throughout their customer service teams, together we mapped the existing customers experience, identifying key pain points to explore in the research phase. After pinning down an initial strategy, I ran ideation workshops to generate & refine ideas for a prototype. Many of the team had never sketched before, but did an amazing job of getting stuck in with pens & paper.',
-					images: [
-						{ oneImage: 'work/work-1.jpg' },
-						{ oneImage: 'work/work-2.jpg' },
-						{ oneImage: 'work/work-3.jpg' },
-						{ oneImage: 'work/work-4.jpg' }
-					]
-				},
-				{
-					id: 'proj-research',
-					title: 'Research',
-					casestudy: 'Example case study',
-					subtitle: 'AbCellera',
-					summary: 'An Innovative Approach to Antibody Exploration',
-					para: 'This Vancouver-based Biotech startup had developed the world’s leading technology for screening & mapping of natural immune responses. Their development team had built a unique data visualization product that enabled scientists to explore their antibody data in a revolutionary new way, but were struggling with how to expand the feature set without compromising on usability.</br></br> I combining a series of contextual user interviews with a heuristic audit, to deliver insight into the core product problems experienced by their customers. I mapped out a strategy for change, & followed up with a UX & UI overhaul to address each opportunity. The team were delighted at the end of it, but that could have just been the celebratory donuts we ate that day!',
-					images: [
-						{ oneImage: 'work/rsrch-1.jpg' },
-						{ oneImage: 'work/rsrch-2.jpg' },
-						{ oneImage: 'work/rsrch-3.jpg' },
-						{ oneImage: 'work/rsrch-4.jpg' },
-						{ oneImage: 'work/rsrch-5.jpg' }
-					]
-				},
-				{
-					id: 'proj-strategy',
-					title: 'Strategy',
-					casestudy: 'Example case study',
-					subtitle: 'Finish line',
-					summary: 'Connecting Content with Commerce',
-					para: 'This American athletics retail brand needed some fresh thinking on their content strategy. How could they use written word to drive higher sales on their e-commerce sites? Through an audit of their competitive landscape, I delivered a presentation of best-in-class content creator brands, alongside the major strategies they needed to adopt in order to remain a key player in the game. It\'s a bit hush, hush though.',
-					images: [
-						{ oneImage: 'work/strat-1.jpg' },
-						{ oneImage: 'work/strat-2.jpg' }
-					]
-				},
-				{
-					id: 'proj-design',
-					title: 'Design',
-					casestudy: 'Example case study',
-					subtitle: 'Travelaer',
-					summary: 'Customer-centric Airline Upgrades',
-					para: 'This European product company creates digital products for the travel industry that improve their partner\'s customer experience & increase revenue. Having identified an opportunity to deliver simpler, smarter, targeted upgrades to frequent flyers, they needed help auditing the competitive landscape, designing the end-to-end customer experience on mobile, & piecing it all together into powerful pitch deck with a compelling story to approach the airlines with. They were delighted with where we landed.',
-					images: [
-						{ oneImage: 'work/des-1.jpg' },
-						{ oneImage: 'work/des-2.jpg' },
-						{ oneImage: 'work/des-3.jpg' },
-						{ oneImage: 'work/des-4.jpg' },
-					]
-				},
-				{
-					id: 'proj-prototyping',
-					title: 'Prototyping',
-					casestudy: 'Example case study',
-					subtitle: 'Hitsource',
-					summary: 'A Brand New Music Maker’s Marketplace',
-					para: 'After leaving the performance side of the hip-hop game, this client dreamt of building an invite-only marketplace for buying & selling hip-hop beats. I brought their vision to life by defining the MVP, developing a new brand identity, designing the user experience & creating a high fidelity prototype of the complete digital product.',
-					images: [
-						{ oneImage: 'work/proto-1.jpg' },
-						{ oneImage: 'work/proto-4.jpg' },
-						{ oneImage: 'work/proto-2.jpg' },
-						{ oneImage: 'work/proto-3.jpg' }
-					]
-				},
-				{
-					id: 'proj-testing',
-					title: 'Testing',
-					casestudy: 'Example case study',
-					subtitle: 'TravelSupermarket',
-					summary: 'A/B Testing For Online Deal Comparison',
-					para: 'Helping TravelSupermarket deliver business results required super targeted design work, thoroughly tested to hit KPIs. As an embedded member of their design team, leading the UX, I designed a number of search results cards based on key customer insights. Each redesign was assessed by senior management before being subject to live A/B testing with thousands of users. Sometimes the results surprised us, but every time we managed to increase conversion rates by percentage points, creating a increasingly successful product, & one very happy client.',
-					images: [
-						{ oneImage: 'work/test-1.jpg' },
-						{ oneImage: 'work/test-2.jpg' },
-						{ oneImage: 'work/test-3.jpg' },
-						{ oneImage: 'work/test-4.jpg' }
-					]
-				},
-				{
-					id: 'proj-development',
-					title: 'Development',
-					casestudy: 'Example case study',
-					subtitle: 'The Green Stone Quarry',
-					summary: 'Connecting A Remote Network',
-					para: 'This fully distributed design agency had an intimate network of experts at their digital fingertips, but struggled with opening up that resource to help others. How could people who have never met discover key new contacts? Combining the data stored in their digital black book of names, with content taken from public LinkedIn profiles, I developed a browsable, searchable, visual index of the network as a proof of concept. By combining this with private social space through Facebook, we now had a system where people could find individuals with specific skills, & reach out to them in a trusted, secure setting. It was the first step in one agency\'s goal to give back to their design community.',
-					images: [
-						{ oneImage: 'work/dev-1.jpg' },
-						{ oneImage: 'work/dev-2.jpg' },
-						{ oneImage: 'work/dev-3.jpg' },
-					]
-				},
-				{
-					id: 'proj-hotchocolate',
-					title: 'Hot Chocolate',
-					casestudy: '',
-					subtitle: 'A Little Perspective',
-					summary: 'Could be just what you need',
-					para:  'It’s easy to map the design process as this fixed, linear process. Follow the path to success, & that’s that, right? Sometimes, sure, but design doesn’t just happen at a desk. You know the cliché that the best ideas come to you in the shower? That\'s because mind needs time to relax. To digest. To process. To loosely wander.</br></br>For me, this means stopping occasionally to take a breath, or a stroll. To sit alone with my thoughts or together with a friend. To let things stew, or talk things through. At a cafe, by the beach or in the mountains. But, most importantly, with a fresh bowl of rich, dark hot chocolate warming my hands & my soul. Because we all need that little escape. A little perspective. A little chocolate.</br></br>It’s all part of the process.',
-					images: [
-						{ oneImage: 'work/hot-1.jpg' }
-					]
-				},
-				
-						
-			]
-		}
-	});
 
 
 
