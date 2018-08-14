@@ -182,7 +182,7 @@ var menu = new Vue({
 						title: 'Prototyping',
 						casestudy: 'Example case study',
 						subtitle: 'Hitsource',
-						summary: 'A brand new nusic naker’s marketplace',
+						summary: 'A brand new music maker’s marketplace',
 						para: 'After leaving the performance side of the hip-hop game, this client dreamt of building an invite-only marketplace for buying & selling hip-hop beats. I brought their vision to life by defining the MVP, developing a new brand identity, designing the user experience & creating a high-fidelity prototype of the complete digital product.',
 						images: [
 							{ oneImage: 'work/proto-1.jpg' },
