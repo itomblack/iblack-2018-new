@@ -13,19 +13,20 @@
 	transition: all $short ease;
 	
 	.border-adjust-wrap {
-	height: inherit;
+		height: inherit;
 
 		img, ul, li { transition: all $short ease; }
 
 		img {
-			float: left;
-			height: 100%;
+			display: none;
 		}
 
-		ul {
-			float: right;
-			margin: 21px 0 0 0;
-		}
+			ul {
+				display: block;
+		    margin: 0 auto;
+		    text-align: center;
+		    float: none;
+			}
 
 		li {
 			margin-left: 36px;
@@ -43,12 +44,6 @@
 		.border-adjust-wrap {
 			img { display: none; }
 
-			ul {
-				display: block;
-		    margin: 0 auto;
-		    text-align: center;
-		    float: none;
-			}
 			li {
 				text-align: center;
 				margin: 0 10px;

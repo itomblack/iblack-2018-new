@@ -357,7 +357,7 @@ var other_contact = new Vue({
 				{
 					company: 'Green Stone',
 					description: 'A distributed creative consultancy',
-					dates: 'Feb 2018 - Current',
+					dates: 'Feb 2018 - Sep 2018',
 					url: 'https://www.greenstone.co/',
 					role: 'Experience Designer (Contract)',
 					responsibilities: [
@@ -546,6 +546,10 @@ var about_quotes = new Vue({
 			subtitle: 'A few kind words from clients & colleagues.',
 			url: '',
 			quotes: [
+				{ name: 'Matt Walsh',
+					company: 'Founder  •  Green Stone',
+					quote: 'Ian is a very talented craftsman who combines a rare blend of creativity, smarts, passion, optimism and hustle. We\'ve enjoyed every minute of our journey with him at Green Stone and plan on continuing that journey in the future.'
+				},
 				{ name: 'Murray McCutcheon',
 					company: 'Business Development  •  AbCellera',
 					quote: 'Ian did a great job delivering value, and the team is very positive about his work. I speak for many in saying we hope we have the opportunity to work together with him again.'
@@ -792,7 +796,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   	window.scrollTo(0, 0);
   	document.getElementById('app').classList.add("js-reveal"); 
 
-  }, 1400);
+  }, 1150);
  
 
 });

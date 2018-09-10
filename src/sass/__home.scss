@@ -43,11 +43,32 @@ a {
 
 	opacity: 0;
 	top: 30px;
+	// transition: all $long ease;
 	transition: all $mid ease;
+
+
+	h1, h2 {
+		opacity: 0;
+		transform: translateY(30px);
+		transition: all $long ease;
+	}
+
+	h2 { transform: translateY(40px); }
+
+	h5, p {
+		opacity: 0;
+		transform: translateY(50px);
+		transition: all $midLong ease;
+	}
 
 	&.js-reveal {
 		opacity: 1;
 		top: 0px;
+
+		h1, h5, h2, p { 
+			opacity: 1;
+			transform: translateY(0px);
+		}
 	}
 }
 
