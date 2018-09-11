@@ -601,7 +601,7 @@ var about_articles = new Vue({
 		data: {
 			phaseNum: '',
 			title: 'My CV',
-			subtitle: 'Incase you need to tick some boxes.',
+			subtitle: 'In case you need to tick some boxes.',
 			url: 'cv.html'
 		}
 	});
