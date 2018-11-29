@@ -48,8 +48,8 @@ var menu = new Vue({
 	var home_intro = new Vue({
 		el: "#intro-home",
 		data: {
-			title: 'Designing future brand experiences',
-			subtitle: 'Your partner for strategic design – I specialize in digital products & customer experience',
+			title: 'Designing & Facilitating Change',
+			subtitle: 'I specialize in strategy, design, & customer experience for technology focussed brands',
 			backImg: 'photos/mountain.png'
 		}
 	});
@@ -59,50 +59,50 @@ var menu = new Vue({
 		el: "#process",
 		data: {
 			title: 'Process',
-			subtitle: 'Each client & project is unique. Through years learning from smart people at top design firms, I’ve honed a suite of skills which I adapt to each individual need.',
+			subtitle: 'Through years learning from smart people at top design firms, I’ve honed a suite of skills I adapt to each individual project.',
 			url: '',
 			phases: [
 				{
 					id: 'open-workshop',
 					phaseNum: '01',
 					phaseTitle: 'Workshops',
-					description: 'Gaining understanding, & collaborating over ideas'
+					description: 'Harnessing the power of collective knowledge'
 				},
 				{
 					id: 'open-research',
 					phaseNum: '02',
 					phaseTitle: 'Research',
-					description: 'Identifying where we are, & where customers expect us to be'
+					description: 'Understanding human needs and expectations'
 				},
 				{
 					id: 'open-strategy',
 					phaseNum: '03',
 					phaseTitle: 'Strategy',
-					description: 'Artfully figuring out the best way to get from here to there'
+					description: 'Defining a vision for the future, and a plan to get there'
 				},
 				{
 					id: 'open-design',
 					phaseNum: '04',
 					phaseTitle: 'Design',
-					description: 'Blueprints for the future'
+					description: 'Creating the blueprints for function and form'
 				},
 				{
 					id: 'open-prototyping',
 					phaseNum: '05',
 					phaseTitle: 'Prototyping',
-					description: 'Simulating change, to test with real people'
+					description: 'Building models out of ideas'
 				},
 				{
 					id: 'open-testing',
 					phaseNum: '06',
 					phaseTitle: 'Testing',
-					description: 'Validating our direction, before we go too far'
+					description: 'Validating assumptions, in order to learn'
 				},
 				{
 					id: 'open-development',
 					phaseNum: '07',
 					phaseTitle: 'Development',
-					description: 'A living product others can experience'
+					description: 'Releasing ideas into the wild'
 				},
 				{
 					id: 'open-hotchocolate',
@@ -261,7 +261,7 @@ var menu = new Vue({
 		el: "#experiments",
 		data: {
 			title: 'Experiments',
-			subtitle: 'A couple of playthings I hacked together, in order to explore new web technologies.',
+			subtitle: 'I love to hack - to play with new technologies and explore new ideas in a flash. These are a few of my favourite creations',
 			url: '',
 			phases: [
 				{
@@ -357,7 +357,7 @@ var other_contact = new Vue({
 				{
 					company: 'Green Stone',
 					description: 'A distributed creative consultancy',
-					dates: 'Feb 2018 - Sep 2018',
+					dates: 'Feb 2018 - Current',
 					url: 'https://www.greenstone.co/',
 					role: 'Experience Designer (Contract)',
 					responsibilities: [
@@ -575,13 +575,14 @@ var about_articles = new Vue({
 			url: '',
 			phases: [
 				{
+					phaseTitle: 'The One Reason Being a Designer Helps You Code',
+					url: 'https://blog.prototypr.io/the-one-reason-being-a-designer-helps-you-code-8193738978d7'
+				},
+				{
 					phaseTitle: '7 big trends in branded content strategy',
 					url: 'https://medium.com/@itomblack88/7-big-trends-in-branded-content-strategy-119a61405b2c'
 				},
-				{
-					phaseTitle: 'Welcome to the world of new retail',
-					url: 'https://medium.com/@itomblack88/welcome-to-the-world-of-new-retail-10157802db3a'
-				},
+			
 				{
 					phaseTitle: 'How facebook deals with a breakup',
 					url: 'https://blog.prototypr.io/how-facebook-deals-with-a-breakup-df49fd879059'

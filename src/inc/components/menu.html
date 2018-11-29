@@ -1,7 +1,7 @@
 <div class="menu-wrap">
 	<div class="border-adjust-wrap">
 		<a href="index.html"><img src="img/icons/logo.svg"></a>
-		<ul>
+		<ul class="menu-back">
 			 <li v-for="item in links" class="link-underline menu-item" v-bind:class="item.class">
 			 		<a v-bind:href="item.url" v-html="item.text"></a>
 			 </li>
