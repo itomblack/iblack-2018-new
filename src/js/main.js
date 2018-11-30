@@ -359,7 +359,7 @@ var other_contact = new Vue({
 					description: 'A distributed creative consultancy',
 					dates: 'Feb 2018 - Current',
 					url: 'https://www.greenstone.co/',
-					role: 'Experience Designer (Contract)',
+					role: 'Experience Design Lead (Contract)',
 					responsibilities: [
 						{ bullet: '<span>Competitive research</span> & <span>content strategy</span> for a major US sportswear brand' },
 						{ bullet: '<span>User research</span>, <span>analysis</span> & <span>usability testing</span> for a world class biotech company' },
