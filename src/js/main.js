@@ -48,7 +48,7 @@ var menu = new Vue({
 	var home_intro = new Vue({
 		el: "#intro-home",
 		data: {
-			title: 'Designing & Facilitating Change',
+			title: 'Designing Future Brand Experiences',
 			subtitle: 'I specialize in strategy, design, & customer experience for technology focussed brands',
 			backImg: 'photos/mountain.png'
 		}
