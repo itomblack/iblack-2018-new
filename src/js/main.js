@@ -479,16 +479,13 @@ var other_contact = new Vue({
 	var contact_social = new Vue({
 		el: "#connect-links",
 		data: {
-			title: 'Social Networks',
+			title: 'Social platforms',
 			links: [
 				{ name: 'LinkedIn',
 					url: 'https://www.linkedin.com/in/itomblack/'
 				},
 				{ name: 'Github',
 					url: 'http://github.com/itomblack/'
-				},
-				{ name: 'Instagram',
-					url: 'https://www.instagram.com/itomblack/'
 				},
 				{ name: 'Medium',
 					url: 'https://medium.com/@itomblack88'
