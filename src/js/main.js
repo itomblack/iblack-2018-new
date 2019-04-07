@@ -246,13 +246,11 @@ var menu = new Vue({
 			subtitle: 'I work with established global brands & innovative new startups throughout Europe & North America.',
 			url: '',
 			clients: [
-				{ name: 'AbCellera' },	{ name: 'Arc’teryx' }, { name: 'AstraZeneca' }, { name: 'Bloombridge' }, { name: 'Brompton' },
-				{ name: 'Cancer Research UK' },	{ name: 'Cape & Cape' }, { name: 'Elavon' }, { name: 'Ellwood Atfield' }, { name: 'Extreme Sports' },
-				{ name: 'Finish Line' },	{ name: 'Galeries Lafayette' }, { name: 'Great British Racing' }, { name: 'Green Stone' }, { name: 'Halfords' },
-				{ name: 'Hirepool' },	{ name: 'Hitsource' }, { name: 'Lendlease' }, { name: 'Manchester Airports Group' }, { name: 'Millenium Point' },
-				{ name: 'Modern Dog Magazine' },	{ name: 'Rileys Sports Bars' }, { name: 'Royal Chelsea Hospital' }, { name: 'Tallink' }, { name: 'Telus' },
-				{ name: 'The Hippodrome Casino' },	{ name: 'The Jockey Club' }, { name: 'The NEC Birmingham' }, { name: 'The Racecourse Association' }, { name: 'The Royal British Legion' },
-				{ name: 'Travelaer' },	{ name: 'TravelSupermarket' }, { name: 'Twitter' }, { name: 'Vancity' }, { name: 'Wagamama' }, { name: 'Yocale' }
+				{ name: 'AbCellera' },	{ name: 'Arc’teryx' }, { name: 'AstraZeneca' }, { name: 'Brompton Bicycle' },	{ name: 'Cancer Research UK' },
+				 { name: 'Finish Line' },	{ name: 'Galeries Lafayette' }, { name: 'Halfords' }, 
+				 { name: 'Hitsource' }, { name: 'Lendlease' }, { name: 'Lululemon' }, { name: 'Manchester Airports Group' },  { name: 'Rileys Sports Bars' }, { name: 'Royal Chelsea Hospital' }, 
+				 { name: 'Tallink' }, { name: 'Telus' }, { name: 'The Hippodrome Casino' },	{ name: 'The Jockey Club' }, 
+				 { name: 'The NEC Birmingham' }, { name: 'The Racecourse Association' }, { name: 'The Royal British Legion' }, { name: 'Travelaer' },	{ name: 'TravelSupermarket' }, { name: 'Twitter' }, { name: 'Vancity' }
 			]
 		}
 	});
@@ -330,7 +328,7 @@ var other_contact = new Vue({
 		data: {
 			title: 'Curriculum Vitae.',
 			subtitle: 'Ian Black',
-			blurb: 'You’re probably busy, so I’ll keep this short & sweet. I partner with technology focussed companies to design new & improved experiences for their customers & teams. I achieve this through strategy, design, content & prototyping. If you want to know more, just ask. That’s it really.'
+			blurb: 'You’re probably busy, so I’ll keep this short. I partner with technology focussed companies to design new & improved experiences for their customers & teams. I achieve this through strategy, design, content & prototyping. If you want to know more, just ask. That’s it really.'
 		}
 	});
 
@@ -355,9 +353,23 @@ var other_contact = new Vue({
 			title: 'Employment',
 			jobs: [
 				{
+					company: 'Lululemon',
+					description: 'athletic apparel retailer',
+					dates: 'Jan 2019 - Current',
+					url: 'https://shop.lululemon.com/',
+					role: 'UX Design Lead (Contract)',
+					responsibilities: [
+						{ bullet: 'UX research & design for the North America <span>e-commerce site</span>' },
+						{ bullet: 'Design and of a <span>new typographic system</span>, improving both the digital brand, and <span>accessibility</span> ' },
+						{ bullet: 'Defining <span>A/B testing</span> strategies with the optimization team, improving guest data collection' },
+						{ bullet: 'Implementation of a new <span>Design System</span> with InVision\'s Design System Manager' },
+						{ bullet: '<span>User research</span> for the launch of the new selfcare product line' },
+					]
+				},
+				{
 					company: 'Green Stone',
 					description: 'A distributed creative consultancy',
-					dates: 'Feb 2018 - Current',
+					dates: 'Feb 2018 - Dec 2018',
 					url: 'https://www.greenstone.co/',
 					role: 'Experience Design Lead (Contract)',
 					responsibilities: [
@@ -530,7 +542,7 @@ var about_journey = new Vue({
 		title: 'My journey',
 		subtitle: 'Life began in London, England.',
 		url: '',
-		para: '18 years later I began studying to be an Architect. Keen for a faster paced industry, I took my first design role out of University as a Graphic Designer in a boutique brand strategy agency. </br></br>Following years of excellent mentorship & self-driven learning, I dove into the world of UI design & development, before continuing into the burgeoning discipline of User Experience. </br></br>I later moved across the Atlantic to Vancouver, to explore the wilderness. When I’m not at my desk you’ll find me lugging my camera up mountains, catching waves at sunset or digging my snowboard out of waist-deep white powder.</br></br>I’ve touched on many aspects of design over the years – from the built landscape to virtual environments – but the focus has always been about delivering value, for real people.',
+		para: '18 years later I began studying to be an Architect. Keen for a faster paced industry, I took my first design role out of University as a Graphic Designer in a boutique brand strategy agency. </br></br>Following years of excellent mentorship & self-driven learning, I dove into the world of UI design & development, before continuing into the burgeoning discipline of User Experience. </br></br>I later moved across the Atlantic to Vancouver, to explore the wilderness. When I’m not at my desk you’ll find me lugging my camera up mountains, catching waves at sunset or digging my skis out of waist-deep powder in the backcountry.</br></br>I’ve touched on many aspects of design over the years – from the built landscape to virtual environments – but the focus has always been about delivering value, for real people.',
 		img: 'photos/me-2.png'
 	}
 });
@@ -558,6 +570,14 @@ var about_quotes = new Vue({
 				{ name: 'Justin Pybus',
 					company: 'UI Designer •  TravelSupermarket',
 					quote: 'Ian really is a master of all his trades. He has an exceptional depth and breadth of knowledge that spans from code to UI Design, from ideation sessions & workshops, to delivering in depth bodies of research. He designs practical solutions that have a measurable impact on the business - Invest in Ian - he\'s a winner!'
+				},
+				{ name: 'Allegra Poschmann',
+					company: 'Product Design Consultant',
+					quote: 'You are the best UX person I have ever worked with. So thoughtful.'
+				},
+				{ name: 'Sean Cardiff',
+					company: 'Experience Design Lead •  Green Stone',
+					quote: 'Yo. Your sketch files are tight.'
 				}
 			]
 		}
@@ -572,6 +592,10 @@ var about_articles = new Vue({
 			url: '',
 			phases: [
 				{
+					phaseTitle: '11 Life Lessons From Influential Product Designer Dieter Rams',
+					url: 'https://medium.muz.li/11-life-lessons-from-influential-product-designer-dieter-rams-4e05e89e1c2'
+				},
+				{
 					phaseTitle: 'The One Reason Being a Designer Helps You Code',
 					url: 'https://blog.prototypr.io/the-one-reason-being-a-designer-helps-you-code-8193738978d7'
 				},
@@ -579,10 +603,9 @@ var about_articles = new Vue({
 					phaseTitle: '7 big trends in branded content strategy',
 					url: 'https://medium.com/@itomblack88/7-big-trends-in-branded-content-strategy-119a61405b2c'
 				},
-			
 				{
-					phaseTitle: 'How facebook deals with a breakup',
-					url: 'https://blog.prototypr.io/how-facebook-deals-with-a-breakup-df49fd879059'
+					phaseTitle: '5 Life Lessons From Influential Designer Paula Scher',
+					url: 'https://medium.muz.li/5-lessons-from-influential-designer-paula-scher-1bbfa142f96e'
 				},
 				{
 					phaseTitle: 'Always bring the hot chocolate',
@@ -592,6 +615,7 @@ var about_articles = new Vue({
 		}
 	});
 
+	
 
 
 	var about_next = new Vue({
