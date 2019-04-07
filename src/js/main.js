@@ -354,7 +354,7 @@ var other_contact = new Vue({
 			jobs: [
 				{
 					company: 'Lululemon',
-					description: 'athletic apparel retailer',
+					description: 'Athletic apparel retailer',
 					dates: 'Jan 2019 - Current',
 					url: 'https://shop.lululemon.com/',
 					role: 'UX Design Lead (Contract)',
