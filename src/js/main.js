@@ -48,8 +48,8 @@ var menu = new Vue({
 	var home_intro = new Vue({
 		el: "#intro-home",
 		data: {
-			title: 'Designing Future Brand Experiences',
-			subtitle: 'I specialize in strategy, design, & customer experience for technology focussed brands',
+			title: 'Connecting People, Technology, & Brands',
+			subtitle: 'I specialize in strategy, design, & customer experience for technology focussed companies',
 			backImg: 'photos/mountain.png'
 		}
 	});
@@ -328,7 +328,7 @@ var other_contact = new Vue({
 		data: {
 			title: 'Curriculum Vitae.',
 			subtitle: 'Ian Black',
-			blurb: 'You’re probably busy, so I’ll keep this short. I partner with technology focussed companies to design new & improved experiences for their customers & teams. I achieve this through strategy, design, content & prototyping. If you want to know more, just ask. That’s it really.'
+			blurb: 'You’re probably busy, so I’ll keep this short. I partner with technology focussed companies to design new & improved experiences for their customers & teams. I achieve this through strategy, content, design, & prototyping. If you want to know more, just ask.'
 		}
 	});
 
