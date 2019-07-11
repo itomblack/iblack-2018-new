@@ -360,7 +360,7 @@ var other_contact = new Vue({
 					role: 'UX Design Lead (Contract)',
 					responsibilities: [
 						{ bullet: 'UX research & design for the North America <span>e-commerce site</span>' },
-						{ bullet: 'Design and of a <span>new typographic system</span>, improving both the digital brand, and <span>accessibility</span> ' },
+						{ bullet: 'Design of a <span>new typographic system</span>, improving both the digital brand, and <span>accessibility</span> ' },
 						{ bullet: 'Defining <span>A/B testing</span> strategies with the optimization team, improving guest data collection' },
 						{ bullet: 'Implementation of a new <span>Design System</span> with InVision\'s Design System Manager' },
 						{ bullet: '<span>User research</span> for the launch of the new selfcare product line' },
