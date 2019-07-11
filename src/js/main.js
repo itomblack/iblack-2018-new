@@ -355,7 +355,7 @@ var other_contact = new Vue({
 				{
 					company: 'Lululemon',
 					description: 'Athletic apparel retailer',
-					dates: 'Jan 2019 - Current',
+					dates: 'Jan 2019 - Jun 2019',
 					url: 'https://shop.lululemon.com/',
 					role: 'UX Design Lead (Contract)',
 					responsibilities: [
